@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
 
           {/* Video */}
-          <div className="relative w-full max-w-full mx-auto">
+          <div className="relative w-full  mx-auto">
             <video
               autoPlay
               loop
