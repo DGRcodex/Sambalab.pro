@@ -10,8 +10,8 @@ export default function Hero() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Gaud-E A. I. Unlock the Power of AI with Gaud-E</h1>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10">
+            <h1 className="h1 mb-4 text-white" data-aos="fade-up">Gaud-E A. I. Unlock the Power of AI with Gaud-E</h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Revolutionize your business with cutting-edge AI solutions for environment and energy.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
@@ -34,7 +34,6 @@ export default function Hero() {
               src="/videos/Video_Gaude.mp4"
               width="1920"
               height="1080"
-             
             />
           </div>
 
