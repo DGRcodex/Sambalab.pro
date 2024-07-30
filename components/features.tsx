@@ -15,21 +15,21 @@ export default function Features() {
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-              <img src="/images/energy-evaluation.png" alt="Energy Evaluation" className="w-full h-auto" />
+              <img src="/images/energy-evaluation.png" alt="Energy Evaluation" className="w-full h-auto rounded-lg mb-6" />
               <h4 className="h4 mb-2">Energy Evaluation</h4>
               <p className="text-lg text-gray-400 text-center">Get an energy and environmental analysis of your project from photos or videos.</p>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
-              <img src="/images/extensions.png" alt="Extensions" className="w-full h-auto" />
+              <img src="/images/extensions.png" alt="Extensions" className="w-full h-auto rounded-lg mb-6" />
               <h4 className="h4 mb-2">Extensions</h4>
               <p className="text-lg text-gray-400 text-center">Generate an expansion proposal for your home from a sketch or photo.</p>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
-              <img src="/images/environmental-analysis.png" alt="Environmental Analysis" className="w-full h-auto" />
+              <img src="/images/environmental-analysis.png" alt="Environmental Analysis" className="w-full h-auto rounded-lg mb-6" />
               <h4 className="h4 mb-2">Environmental Analysis</h4>
               <p className="text-lg text-gray-400 text-center">Obtain an energy, climatic, and environmental analysis of your project from photos or videos.</p>
             </div>
@@ -46,14 +46,14 @@ export default function Features() {
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-blocks]">
-              <img src="/images/exterior-ai.png" alt="Exterior AI" className="w-full h-auto" />
+              <img src="/images/exterior-ai.png" alt="Exterior AI" className="w-full h-auto rounded-lg mb-6" />
               <h4 className="h4 mb-2">Exterior AI</h4>
               <p className="text-lg text-gray-400 text-center">Generate various architectural visualizations for exteriors.</p>
             </div>
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
-              <img src="/images/interior-ai.png" alt="Interior AI" className="w-full h-auto" />
+              <img src="/images/interior-ai.png" alt="Interior AI" className="w-full h-auto rounded-lg mb-6" />
               <h4 className="h4 mb-2">Interior AI</h4>
               <p className="text-lg text-gray-400 text-center">Reimagine any room with more than 20 design styles to create interiors in seconds. Control finishes, colors, and lighting.</p>
             </div>
@@ -61,7 +61,7 @@ export default function Features() {
             {/* 6th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
               <img src="/images/masterplan-ai.png
-              " alt="Masterplan AI" className="w-full h-auto" />
+              " alt="Masterplan AI" className="w-full h-auto rounded-lg mb-6" />
               <h4 className="h4 mb-2">Masterplan AI</h4>
               <p className="text-lg text-gray-400 text-center">Generate a lot, a 3D condominium, or a landscaping project from just a sketch or photo.</p>
             </div>
