@@ -8,7 +8,7 @@ import FeatImage05 from '@/public/images/n5.jpeg'
 
 export default function Zigzag() {
   return (
-    <section>
+    <section className="bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-white-800">
 
@@ -162,7 +162,7 @@ export default function Zigzag() {
                   </ul>
                 </div>
               </div>
-           
+
             </div>
 
             {/* 5st item */}
