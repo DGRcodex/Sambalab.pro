@@ -24,14 +24,14 @@ export default function Hero() {
           </div>
 
           {/* Video */}
-          <div className="relative w-full max-w-6xl mx-auto">
+          <div className="relative w-full max-w-full mx-auto">
             <video
               autoPlay
               loop
               muted
               playsInline
               className="w-full h-200px"
-              src="/videos/gaudevideo.mp4"
+              src="/videos/Video_Gaude.mp4"
               width="1920"
               height="1080"
              
