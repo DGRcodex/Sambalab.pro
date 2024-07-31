@@ -6,7 +6,7 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4 font-playfair font-normal">Our Services.</h2>
+            <h2 className="h1 mb-4 text-white font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">Our Services.</h2>
             <p className="text-xl text-gray-400">We apply artificial intelligence to architectural design to obtain optimal results in energy efficiency and environmental aspects.</p>
           </div>
 
@@ -16,21 +16,21 @@ export default function Features() {
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
               <img src="/images/energy-evaluation.png" alt="Energy Evaluation" className="w-full h-auto rounded-lg mb-6" />
-              <h4 className="h4 mb-2">Energy Evaluation</h4>
+              <h4 className="h4 mb-2 font-playfair font-normal">Energy Evaluation</h4>
               <p className="text-lg text-gray-400 text-center">Get an energy and environmental analysis of your project from photos or videos.</p>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
               <img src="/images/extensions.png" alt="Extensions" className="w-full h-auto rounded-lg mb-6" />
-              <h4 className="h4 mb-2">Extensions</h4>
+              <h4 className="h4 mb-2 font-playfair font-normal">Extensions</h4>
               <p className="text-lg text-gray-400 text-center">Generate an expansion proposal for your home from a sketch or photo.</p>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
               <img src="/images/environmental-analysis.png" alt="Environmental Analysis" className="w-full h-auto rounded-lg mb-6" />
-              <h4 className="h4 mb-2">Environmental Analysis</h4>
+              <h4 className="h4 mb-2 font-playfair font-normal">Environmental Analysis</h4>
               <p className="text-lg text-gray-400 text-center">Obtain an energy, climatic, and environmental analysis of your project from photos or videos.</p>
             </div>
 
@@ -38,7 +38,7 @@ export default function Features() {
 
           {/* New title */}
           <div className="max-w-3xl mx-auto text-center py-12">
-            <h3 className="h3 mb-4 font-playfair font-normal">We help you with interiors and exteriors</h3>
+            <h3 className="h1 mb-4 text-white font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">We help you with interiors and exteriors</h3>
           </div>
 
           {/* Additional items */}
@@ -47,14 +47,14 @@ export default function Features() {
             {/* 4th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-blocks]">
               <img src="/images/exterior-ai.png" alt="Exterior AI" className="w-full h-auto rounded-lg mb-6" />
-              <h4 className="h4 mb-2">Exterior AI</h4>
+              <h4 className="h4 mb-2 font-playfair font-normal">Exterior AI</h4>
               <p className="text-lg text-gray-400 text-center">Generate various architectural visualizations for exteriors.</p>
             </div>
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
               <img src="/images/interior-ai.png" alt="Interior AI" className="w-full h-auto rounded-lg mb-6" />
-              <h4 className="h4 mb-2">Interior AI</h4>
+              <h4 className="h4 mb-2 font-playfair font-normal">Interior AI</h4>
               <p className="text-lg text-gray-400 text-center">Reimagine any room with more than 20 design styles to create interiors in seconds. Control finishes, colors, and lighting.</p>
             </div>
 
@@ -62,7 +62,7 @@ export default function Features() {
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
               <img src="/images/masterplan-ai.png
               " alt="Masterplan AI" className="w-full h-auto rounded-lg mb-6" />
-              <h4 className="h4 mb-2">Masterplan AI</h4>
+              <h4 className="h4 mb-2 font-playfair font-normal">Masterplan AI</h4>
               <p className="text-lg text-gray-400 text-center">Generate a lot, a 3D condominium, or a landscaping project from just a sketch or photo.</p>
             </div>
 

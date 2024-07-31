@@ -15,7 +15,7 @@ export default function Zigzag() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4"></div>
-            <h1 className="h2 mb-4 text-black font-playfair font-normal">Why Choose Us?</h1>
+            <h1 className="h1 mb-4 text-black font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">Why Choose Us?</h1>
             <p className="text-xl text-gray-400">Discover why our AI technology is the best choice for your architectural and landscaping projects.</p>
           </div>
 

@@ -1,16 +1,20 @@
-import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo from '@/components/modal-video'
+import VideoThumb from '@/public/images/hero-image-01.jpg';
+import ModalVideo from '@/components/modal-video';
 
 export default function Hero() {
   return (
-    <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+    // Ajuste 1: Asegúrate de que el hero ocupe toda la pantalla con h-screen
+    <section className="relative h-screen overflow-hidden">
+      {/* Ajuste 2: Remover paddings innecesarios para ocupar toda la pantalla */}
+      <div className="max-w-6xl mx-auto relative h-full">
 
         {/* Hero content */}
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
+        {/* Ajuste 3: Usar flexbox para centrar el contenido sobre el video */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
 
           {/* Section header */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10">
+          {/* Ajuste 4: Asegúrate de que el texto sea visible sobre el video */}
+          <div className="flex flex-col items-center justify-center text-center z-10">
             <h1 className="h1 mb-4 text-white font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal" data-aos="fade-up">The Power of AI with Gaud-E</h1>
             <p className="text-xl text-white mb-8 font-lato" data-aos="fade-up" data-aos-delay="200">Revolutionize your business with cutting-edge AI solutions for environment and energy.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
@@ -22,24 +26,23 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
-          {/* Video */}
-          <div className="relative w-full  mx-auto">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-200px"
-              src="/videos/Video_Gaude.mp4"
-              width="1920"
-              height="1080"
-            />
-          </div>
-
         </div>
 
+        {/* Video */}
+        {/* Ajuste 5: El video ocupa todo el contenedor del hero */}
+        <div className="absolute inset-0 w-full h-full">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            src="/videos/Video_Gaude.mp4"
+            width="1920"
+            height="1080"
+          />
+        </div>
       </div>
     </section>
-  )
+  );
 }
