@@ -38,7 +38,15 @@ module.exports = {
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
-        'architects-daughter': ['var(--font-architects-daughter)', 'sans-serif']
+        'architects-daughter': ['var(--font-architects-daughter)', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
+        lato: ['Lato', 'sans-serif'],
+        avenir: ['Avenir', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        merriweather: ['Merriweather', 'serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       fontSize: {
         xs: '0.75rem',
