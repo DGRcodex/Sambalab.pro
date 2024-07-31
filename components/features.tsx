@@ -6,7 +6,7 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Our Services.</h2>
+            <h2 className="h2 mb-4 font-playfair font-normal">Our Services.</h2>
             <p className="text-xl text-gray-400">We apply artificial intelligence to architectural design to obtain optimal results in energy efficiency and environmental aspects.</p>
           </div>
 
@@ -38,7 +38,7 @@ export default function Features() {
 
           {/* New title */}
           <div className="max-w-3xl mx-auto text-center py-12">
-            <h3 className="h3 mb-4">We help you with interiors and exteriors</h3>
+            <h3 className="h3 mb-4 font-playfair font-normal">We help you with interiors and exteriors</h3>
           </div>
 
           {/* Additional items */}

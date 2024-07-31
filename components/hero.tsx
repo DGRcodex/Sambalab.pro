@@ -11,7 +11,7 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10">
-            <h1 className="h1 mb-4 text-white font-playfair text-5xl sm:text-6xl lg:text-7xl" data-aos="fade-up">The Power of AI with Gaud-E</h1>
+            <h1 className="h1 mb-4 text-white font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal" data-aos="fade-up">The Power of AI with Gaud-E</h1>
             <p className="text-xl text-white mb-8 font-lato" data-aos="fade-up" data-aos-delay="200">Revolutionize your business with cutting-edge AI solutions for environment and energy.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
