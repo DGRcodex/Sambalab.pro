@@ -2,7 +2,6 @@ import Link from 'next/link';
 import MobileMenu from './mobile-menu';
 
 export default function Header() {
-  
   return (
     <header className="fixed w-full z-30 bg-purple-100 transition duration-300 hover:bg-[#4B4ACF] group">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

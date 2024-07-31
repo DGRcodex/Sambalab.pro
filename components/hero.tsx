@@ -3,8 +3,8 @@ import ModalVideo from '@/components/modal-video';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-full">
+    <section className="relative h-screen w-screen">
+      <div className="h-full w-full">
 
         {/* Hero content */}
         <div className="relative h-full flex flex-col justify-center items-center text-center">
@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
 
           {/* Video */}
-          <div className="absolute inset-0 w-full h-full">
+          <div className="absolute inset-0 w-full h-full overflow-hidden">
             <video
               autoPlay
               loop
