@@ -32,8 +32,8 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3 text-gray-600">Innovation with Artificial Intelligence:</h3>
-                  <p className="text-xl text-gray-400 mb-4">Our services are based on the most advanced AI technology, allowing you to transform your ideas into reality with precision and speed.</p>
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Innovation with Artificial Intelligence:</h3>
+                  <p className="text-xl text-gray-400 mb-4 font-lato">Our services are based on the most advanced AI technology, allowing you to transform your ideas into reality with precision and speed.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +68,8 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3 text-gray-600">Experience and Reliability:</h3>
-                  <p className="text-xl text-gray-400 mb-4 ">We have a team of architecture and design experts with years of experience. Trust us to take your projects to the next level.</p>
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Experience and Reliability:</h3>
+                  <p className="text-xl text-gray-400 mb-4 font-merriweather">We have a team of architecture and design experts with years of experience. Trust us to take your projects to the next level.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +102,7 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600">Personalized Results:</h3>
+                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Personalized Results:</h3>
                   <p className="text-xl text-gray-400 mb-4">We offer tailored solutions for each client. Whether it's exterior design, interior design, or a landscaping project, we adapt our tools to meet your specific needs.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -138,7 +138,7 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600">Time and Resource Savings:</h3>
+                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Time and Resource Savings:</h3>
                   <p className="text-xl text-gray-400 mb-4">Our AI tools not only optimize design but also save time and resources, allowing you to focus on other important aspects of your project.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -175,7 +175,7 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600">Sustainability:</h3>
+                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Sustainability:</h3>
                   <p className="text-xl text-gray-400 mb-4">Committed to the environment, our services include energy and environmental analysis to ensure your projects are sustainable.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
