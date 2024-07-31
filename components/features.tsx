@@ -38,7 +38,7 @@ export default function Features() {
 
           {/* New title */}
           <div className="max-w-3xl mx-auto text-center py-12">
-            <h3 className="h3 mb-4">Additionally, we help you with interiors and exteriors</h3>
+            <h3 className="h3 mb-4">We help you with interiors and exteriors</h3>
           </div>
 
           {/* Additional items */}
