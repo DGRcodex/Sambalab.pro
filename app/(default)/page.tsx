@@ -10,7 +10,7 @@ import Features from '@/components/features'
 import FinalFeatures from '@/components/final-features'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
-import Testimonials from '@/components/Testimonials'
+import Testimonials from '@/components/testimonials'
 
 export default function Home() {
   return (
