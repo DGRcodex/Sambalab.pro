@@ -13,7 +13,7 @@ export default function Zigzag() {
         <div className="py-12 md:py-20 border-t border-white-800">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-3xl gtmx-auto text-center pb-12 md:pb-16">
             <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4"></div>
             <h1 className="h1 mb-4 text-black font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">Why Choose Us?</h1>
             <p className="text-xl text-gray-400">At our company, we specialize in offering innovative solutions that leverage the power of artificial intelligence. Here are our main services:</p>
