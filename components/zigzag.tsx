@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import FeatImage01 from '@/public/images/n1.jpeg'
+import FeatImage01 from '@/public/images/assets/machineLearning-1.jpeg'
 import FeatImage02 from '@/public/images/n2.jpeg'
-import FeatImage03 from '@/public/images/n3.jpeg'
-import FeatImage04 from '@/public/images/n4.jpeg'
+import FeatImage03 from '@/public/images/assets/computer-vision.jpg'
+import FeatImage04 from '@/public/images/assets/predictive.jpeg'
 import FeatImage05 from '@/public/images/n5.jpeg'
 
 export default function Zigzag() {
@@ -32,8 +32,8 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Innovation with Artificial Intelligence:</h3>
-                  <p className="text-xl text-gray-400 mb-4 font-lato">Our services are based on the most advanced AI technology, allowing you to transform your ideas into reality with precision and speed.</p>
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Machine Learning:</h3>
+                  <p className="text-xl text-gray-400 mb-4 font-lato">We develop machine learning models that allow companies to extract value from their data. Our algorithms are capable of learning from patterns and making accurate predictions, improving decision making and optimizing processes.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +68,8 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Experience and Reliability:</h3>
-                  <p className="text-xl text-gray-400 mb-4 font-merriweather">We have a team of architecture and design experts with years of experience. Trust us to take your projects to the next level.</p>
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Natural Language Processes (NLP):</h3>
+                  <p className="text-xl text-gray-400 mb-4 font-merriweather">We implement natural language processing technologies that facilitate interaction between humans and machines. From chatbots to sentiment analysis, our NLP solutions enable organizations to understand and process human language efficiently.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -102,8 +102,8 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Personalized Results:</h3>
-                  <p className="text-xl text-gray-400 mb-4">We offer tailored solutions for each client. Whether it's exterior design, interior design, or a landscaping project, we adapt our tools to meet your specific needs.</p>
+                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Computer Vision:</h3>
+                  <p className="text-xl text-gray-400 mb-4">Our expertise in computer vision allows companies to analyze and understand images and videos. We develop systems that can recognize objects, identify patterns and perform classification tasks, improving automation and security.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -138,8 +138,8 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Time and Resource Savings:</h3>
-                  <p className="text-xl text-gray-400 mb-4">Our AI tools not only optimize design but also save time and resources, allowing you to focus on other important aspects of your project.</p>
+                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Predictive Data Analysis:</h3>
+                  <p className="text-xl text-gray-400 mb-4">We offer predictive analytics services that help organizations anticipate future trends and behaviors. Using advanced data analysis techniques, we transform historical information into valuable insights that drive effective strategies.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -175,8 +175,8 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Sustainability:</h3>
-                  <p className="text-xl text-gray-400 mb-4">Committed to the environment, our services include energy and environmental analysis to ensure your projects are sustainable.</p>
+                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Generative AI in Architecture, Music and Art:</h3>
+                  <p className="text-xl text-gray-400 mb-4">We explore the potential of generative artificial intelligence in various creative disciplines. From creating innovative architectural designs to composing music and generating works of art, our solutions.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
