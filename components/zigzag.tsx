@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import FeatImage01 from '@/public/images/assets/machineLearning-1.jpeg'
+import FeatImage01 from '@/public/images/assets/MachineLearning-1.jpeg'
 import FeatImage02 from '@/public/images/n2.jpeg'
 import FeatImage03 from '@/public/images/assets/computer-vision.jpg'
 import FeatImage04 from '@/public/images/assets/predictive.jpeg'
