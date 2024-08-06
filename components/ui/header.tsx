@@ -21,20 +21,7 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link
-                  href="/signin"
-                  className="font-medium text-[#4B4ACF] group-hover:text-black px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Sign in
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/signup"
-                  className="btn-sm text-white bg-[#4B4ACF] hover:bg-[#4B4ACF] hover:text-white ml-3 transition duration-150 ease-in-out rounded-full"
-                >
-                  Sign up
-                </Link>
+                
               </li>
             </ul>
           </nav>

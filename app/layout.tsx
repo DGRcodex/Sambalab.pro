@@ -7,13 +7,13 @@ import Banner from '@/components/banner'
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-playfair',
   display: 'swap'
 })
 
 const architects_daughter = Architects_Daughter({
   subsets: ['latin'],
-  variable: '--font-architects-daughter',
+  variable: '--font-lato-merriweather',
   weight: '400',
   display: 'swap'
 })
