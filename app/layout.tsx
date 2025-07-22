@@ -28,6 +28,9 @@ const accentFont = JetBrains_Mono({
 export const metadata = {
   title: 'Sambalab',
   description: 'Laboratorio creativo y tecnológico',
+  icons: {
+    icon: '/favicon.ico', // Esto conecta con /public/favicon.ico
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -37,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
-          <Banner />
+          
         </div>
       </body>
     </html>
