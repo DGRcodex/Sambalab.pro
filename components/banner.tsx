@@ -17,7 +17,7 @@ export default function Banner() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Visita mi Github<span className="hidden sm:inline"> on GitHub</span>
+                Visítame en<span className="hidden sm:inline"> on GitHub</span>
               </a>{' '}
               <span className="italic px-1.5">or</span>{' '}
               <a className="font-medium hover:underline text-emerald-400" href="https://dgrcodex.me" target="_blank" rel="noreferrer">
