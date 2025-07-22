@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Gaud-e Unlock the Power',
-  description: 'Gaud-e Landing Page',
+  title: 'Sambalab',
+  description: 'Landing Page with Sambalab',
 
 
 }
@@ -10,6 +10,7 @@ import Features from '@/components/features'
 import FinalFeatures from '@/components/final-features'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
+import Blocks from '@/components/blocks'
 import Testimonials from '@/components/testimonials'
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Features />
       <Zigzag />
       <FinalFeatures />
+      <Blocks /> 
       <Testimonials />
       <Newsletter />
      

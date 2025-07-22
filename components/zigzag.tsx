@@ -12,96 +12,76 @@ export default function Zigzag() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-white-800">
 
-          {/* Section header */}
+          {/* Encabezado */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4"></div>
-            <h1 className="h1 mb-4 text-black font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">Why Choose Us?</h1>
-            <p className="text-xl text-gray-400">At our company, we specialize in offering innovative solutions that leverage the power of artificial intelligence. Here are our main services:</p>
+            <h1 className="h1 mb-4 text-black font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">¿Qué nos impulsa?</h1>
+            <p className="text-xl text-gray-400">En Sambalab unimos diseño, código e inteligencia artificial para construir soluciones funcionales, escalables e inspiradoras.</p>
           </div>
 
-          {/* Items */}
+          {/* Ítems */}
           <div className="grid gap-20">
 
-            {/* 1st item */}
+            {/* 1 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width={540} height={405} alt="Features 01" />
+              <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
+                <Image src={FeatImage01} width={540} height={405} alt="IA y Machine Learning" />
               </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
+              <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Machine Learning:</h3>
-                  <p className="text-xl text-gray-400 mb-4 font-lato text-justify">We develop machine learning models that allow companies to extract value from their data. Our algorithms are capable of learning from patterns and making accurate predictions, improving decision making and optimizing processes.</p>
-                 
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">IA y Machine Learning</h3>
+                  <p className="text-xl text-gray-400 mb-4 text-justify">Creamos sistemas inteligentes capaces de aprender de los datos, automatizar decisiones y evolucionar con cada interacción. Desde clasificadores hasta modelos predictivos, aplicamos IA a problemas reales.</p>
                 </div>
               </div>
             </div>
 
-            {/* 2nd item */}
+            {/* 2 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02" />
+              <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 rtl">
+                <Image src={FeatImage02} width={540} height={405} alt="Frontend Web" />
               </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
+              <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Natural Language Processes (NLP):</h3>
-                  <p className="text-xl text-gray-400 mb-4 font-lato text-justify">We implement natural language processing technologies that facilitate interaction between humans and machines. From chatbots to sentiment analysis, our NLP solutions enable organizations to understand and process human language efficiently.</p>
-                  
-                </div>
-              </div>
-            </div>            {/* 3st item */}
-            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 01" />
-              </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
-                <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Computer Vision:</h3>
-                  <p className="text-xl text-gray-400 mb-4 font-lato text-justify">Our expertise in computer vision allows companies to analyze and understand images and videos. We develop systems that can recognize objects, identify patterns and perform classification tasks, improving automation and security.</p>
-                 
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Experiencias web frontend</h3>
+                  <p className="text-xl text-gray-400 mb-4 text-justify">Diseñamos interfaces web ágiles, responsivas e intuitivas. Usamos Next.js, Astro y Tailwind para crear espacios digitales bellos y funcionales.</p>
                 </div>
               </div>
             </div>
 
-            {/* 4nd item */}
+            {/* 3 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage04} width={540} height={405} alt="Features 02" />
+              <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:order-1">
+                <Image src={FeatImage03} width={540} height={405} alt="Computer Vision" />
               </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
+              <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
+                <div className="md:pr-4 lg:pr-12 xl:pr-16">
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Visión por Computador</h3>
+                  <p className="text-xl text-gray-400 mb-4 text-justify">Desarrollamos sistemas de visión artificial capaces de analizar imágenes y videos, detectar patrones y generar interacción visual automatizada. Hacemos que las máquinas vean.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* 4 */}
+            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
+              <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 rtl">
+                <Image src={FeatImage04} width={540} height={405} alt="Backend" />
+              </div>
+              <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Predictive Data Analysis:</h3>
-                  <p className="text-xl text-gray-400 mb-4 font-lato text-justify">We offer predictive analytics services that help organizations anticipate future trends and behaviors. Using advanced data analysis techniques, we transform historical information into valuable insights that drive effective strategies.</p>
-                
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Backend y Automatización</h3>
+                  <p className="text-xl text-gray-400 mb-4 text-justify">Construimos arquitecturas robustas usando Django, FastAPI y Node.js. APIs, autenticación, bases de datos y flujos automatizados para escalar de forma eficiente y segura.</p>
                 </div>
               </div>
-
             </div>
 
-            {/* 5st item */}
+            {/* 5 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage05} width={540} height={405} alt="Features 01" />
+              <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:order-1">
+                <Image src={FeatImage05} width={540} height={405} alt="Prototipado creativo" />
               </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
+              <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2"></div>
-                  <h3 className="h3 mb-3  text-gray-600 font-playfair font-normal">Generative AI in Architecture, Music and Art:</h3>
-                  <p className="text-xl text-gray-400 mb-4 font-lato text-justify">We explore the potential of generative artificial intelligence in various creative disciplines. From creating innovative architectural designs to composing music and generating works of art, our solutions.</p>
-                 
+                  <h3 className="h3 mb-3 text-gray-600 font-playfair font-normal">Prototipado Creativo</h3>
+                  <p className="text-xl text-gray-400 mb-4 text-justify">Experimentamos con interfaces, música, arte y texto mediante IA generativa. Creamos herramientas y experiencias que expanden las fronteras de lo digital.</p>
                 </div>
               </div>
             </div>
