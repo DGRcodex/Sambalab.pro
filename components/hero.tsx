@@ -39,7 +39,7 @@ export default function Hero() {
               muted
               playsInline
               className="w-full h-full object-cover"
-              src="/videos/Video_Gaude.mp4"
+              src="/videos/sambalabherovideo.mp4"
             />
           </div>
 
