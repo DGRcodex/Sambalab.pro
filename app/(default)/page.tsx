@@ -11,7 +11,7 @@ import FinalFeatures from '@/components/final-features'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Blocks from '@/components/blocks'
-import Testimonials from '@/components/testimonials'
+import Testimonials from '@/components/equipo'
 
 export default function Home() {
   return (
