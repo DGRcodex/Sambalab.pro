@@ -24,7 +24,9 @@ export default function Zigzag() {
             {/* 1 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
-                <Image src={FeatImage01} width={540} height={405} alt="IA y Machine Learning" />
+                <div className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden shadow-lg">
+                  <Image src={FeatImage01} alt="IA y Machine Learning" fill className="object-cover" sizes="(max-width: 768px) 100vw, 540px" />
+                </div>
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
@@ -37,7 +39,9 @@ export default function Zigzag() {
             {/* 2 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 rtl">
-                <Image src={FeatImage02} width={540} height={405} alt="Frontend Web" />
+                <div className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden shadow-lg">
+                  <Image src={FeatImage02} alt="Frontend Web" fill className="object-cover" sizes="(max-width: 768px) 100vw, 540px" />
+                </div>
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
@@ -50,7 +54,9 @@ export default function Zigzag() {
             {/* 3 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:order-1">
-                <Image src={FeatImage03} width={540} height={405} alt="Computer Vision" />
+                <div className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden shadow-lg">
+                  <Image src={FeatImage03} alt="Computer Vision" fill className="object-cover" sizes="(max-width: 768px) 100vw, 540px" />
+                </div>
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
@@ -63,7 +69,9 @@ export default function Zigzag() {
             {/* 4 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 rtl">
-                <Image src={FeatImage04} width={540} height={405} alt="Backend" />
+                <div className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden shadow-lg">
+                  <Image src={FeatImage04} alt="Backend" fill className="object-cover" sizes="(max-width: 768px) 100vw, 540px" />
+                </div>
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
@@ -76,7 +84,9 @@ export default function Zigzag() {
             {/* 5 */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:order-1">
-                <Image src={FeatImage05} width={540} height={405} alt="Prototipado creativo" />
+                <div className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden shadow-lg">
+                  <Image src={FeatImage05} alt="Prototipado creativo" fill className="object-cover" sizes="(max-width: 768px) 100vw, 540px" />
+                </div>
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
