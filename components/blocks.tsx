@@ -1,49 +1,52 @@
 // components/Blocks.tsx
 import Image from "next/image";
 
-// ✅ Import estático: garantiza presencia en el build y rutas correctas en prod
-import icono1 from "@/public/iconos/icono1.png";
-import icono2 from "@/public/iconos/icono2.png";
-import icono3 from "@/public/iconos/icono3.png";
-import icono4 from "@/public/iconos/icono4.png";
-import icono5 from "@/public/iconos/icono5.png";
-import icono6 from "@/public/iconos/icono6.png";
-
 export default function Blocks() {
+  // Rutas ABSOLUTAS desde /public, respetando mayúsculas/minúsculas
+  const ICONS = [
+    "/iconos/Icono1.png",
+    "/iconos/Icono2.png",
+    "/iconos/Icono3.png",
+    "/iconos/Icono4.png",
+    "/iconos/Icono5.png",
+    "/iconos/Icono6.png",
+    "/iconos/Icono7.png", // por si luego agregas el séptimo
+  ];
+
   const items = [
     {
       title: "Diseño web y UI/UX",
-      icon: icono1,
+      icon: ICONS[0],
       desc:
         "Diseñamos interfaces visuales modernas, accesibles y funcionales, con foco en la experiencia del usuario y coherencia estética para cada proyecto.",
     },
     {
       title: "Desarrollo de plataformas",
-      icon: icono2,
+      icon: ICONS[1],
       desc:
         "Creamos plataformas robustas y escalables usando Next.js, Django y Supabase. Integramos APIs, bases de datos y servicios en la nube.",
     },
     {
       title: "Automatización con IA",
-      icon: icono3,
+      icon: ICONS[2],
       desc:
         "Integramos modelos de lenguaje y visión computacional para optimizar tareas, enriquecer experiencias y reducir tiempos en flujos digitales.",
     },
     {
       title: "Prototipado creativo",
-      icon: icono4,
+      icon: ICONS[3],
       desc:
         "Construimos MVPs, pruebas de concepto e interfaces interactivas para validar ideas rápidamente y adaptarlas a nuevos escenarios tecnológicos.",
     },
     {
       title: "Consultoría estratégica",
-      icon: icono5,
+      icon: ICONS[4],
       desc:
         "Acompañamos procesos de transformación digital con visión técnica y creativa. Desde arquitectura hasta marketing digital basado en datos.",
     },
     {
       title: "Lenguaje, arte y tecnología",
-      icon: icono6,
+      icon: ICONS[5],
       desc:
         "Exploramos las fronteras entre IA, poesía, arte visual e interacción humana. Creamos herramientas que combinan sentido, expresión y código.",
     },
@@ -75,7 +78,7 @@ export default function Blocks() {
                 data-aos-anchor="[data-aos-id-blocks]"
               >
                 <Image
-                  src={s.icon}
+                  src={s.icon}           // ← ruta absoluta desde /public
                   alt={s.title}
                   width={96}
                   height={96}
