@@ -12,7 +12,7 @@ type Member = {
   bio: string;
 };
 
-// Cambia esta extensión según tus archivos reales (png | jpg | webp)
+// Cambia esta extensión según tus archivos reales hice un cambio(png | jpg | webp)
 const EXT = "png";
 
 const team: Member[] = [
