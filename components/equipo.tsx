@@ -20,7 +20,7 @@ const team: Member[] = [
     id: "daniel",
     name: "Daniel García",
     role: "Fundador · Arquitectura técnica",
-    src: `/equipo/daniel.${EXT}`,
+    src: `/equipo/Daniel.${EXT}`,
     tagline:
       "Full Stack con foco en backend e IA. Integra lenguaje y visión en procesos reales.",
     bio:

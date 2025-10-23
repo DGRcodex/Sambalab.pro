@@ -48,7 +48,7 @@ export default function Blocks() {
       title: "Lenguaje, arte y tecnología",
       icon: ICONS[5],
       desc:
-        "Exploramos las fronteras entre IA, poesía, arte visual e interacción humana. Creamos herramientas que combinan sentido, expresión y código.",
+        "Exploramos las fronteras entre IA, escritura creativa, arte visual e interacción humana. Creamos herramientas que combinan sentido, expresión y código.",
     },
   ];
 
