@@ -11,7 +11,9 @@ import FinalFeatures from '@/components/final-features'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Blocks from '@/components/blocks'
+import Proyectos from '@/components/proyectos'
 import Equipo from '@/components/equipo'
+import Contacto from '@/components/contacto'
 
 export default function Home() {
   return (
@@ -20,10 +22,12 @@ export default function Home() {
       <Features />
       <Zigzag />
       <FinalFeatures />
-      <Blocks /> 
+      <Blocks />
+      <Proyectos />
       <Equipo />
-   
-     
+      <Contacto />
+
+
     </>
   )
 }

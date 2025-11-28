@@ -29,23 +29,25 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#projects"
+                  href="#proyectos"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
                   Proyectos
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/blog"
+                <a
+                  href="https://www.linkedin.com/company/sambalab/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
                   Blog
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="#contacto"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
                   Contacto
