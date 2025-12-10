@@ -35,9 +35,9 @@ export default function Footer() {
               <div className="text-sm">
                 <h6 className="text-gray-600 font-medium mb-1">{t.footer.services}</h6>
                 <ul>
-                  <li className="mb-1"><Link href="#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.webDev}</Link></li>
-                  <li className="mb-1"><Link href="#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.aiAuto}</Link></li>
-                  <li className="mb-1"><Link href="#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.proto}</Link></li>
+                  <li className="mb-1"><Link href="/#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.webDev}</Link></li>
+                  <li className="mb-1"><Link href="/#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.aiAuto}</Link></li>
+                  <li className="mb-1"><Link href="/#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.proto}</Link></li>
                 </ul>
               </div>
 
@@ -46,8 +46,8 @@ export default function Footer() {
                 <h6 className="text-gray-600 font-medium mb-1">{t.footer.resources}</h6>
                 <ul>
                   <li className="mb-1"><a href="https://www.linkedin.com/company/sambalab/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-purple-700">{t.footer.links.blog}</a></li>
-                  <li className="mb-1"><Link href="#proyectos" className="text-gray-500 hover:text-purple-700">{t.footer.links.cases}</Link></li>
-                  <li className="mb-1"><Link href="#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.tools}</Link></li>
+                  <li className="mb-1"><Link href="/#proyectos" className="text-gray-500 hover:text-purple-700">{t.footer.links.cases}</Link></li>
+                  <li className="mb-1"><Link href="/#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.tools}</Link></li>
                 </ul>
               </div>
 
@@ -55,8 +55,8 @@ export default function Footer() {
               <div className="text-sm">
                 <h6 className="text-gray-600 font-medium mb-1">{t.footer.about}</h6>
                 <ul>
-                  <li className="mb-1"><Link href="#equipo" className="text-gray-500 hover:text-purple-700">{t.footer.team}</Link></li>
-                  <li className="mb-1"><Link href="#contacto" className="text-gray-500 hover:text-purple-700">{t.footer.contact}</Link></li>
+                  <li className="mb-1"><Link href="/#equipo" className="text-gray-500 hover:text-purple-700">{t.footer.team}</Link></li>
+                  <li className="mb-1"><Link href="/#contacto" className="text-gray-500 hover:text-purple-700">{t.footer.contact}</Link></li>
                   <li className="mb-1"><Link href="/newsletter" className="text-gray-500 hover:text-purple-700">{t.footer.newsletter}</Link></li>
                 </ul>
               </div>
