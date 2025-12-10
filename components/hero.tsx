@@ -1,11 +1,14 @@
 'use client'
 
+import { useState } from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 import ParticlesBackground from '@/components/ui/particles-background';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
+  const [videoOpacity, setVideoOpacity] = useState(1);
+
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
@@ -22,14 +25,27 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-screen overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full overflow-hidden bg-black">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
-          src="/videos/Herodesambalab.mp4"
+          className={`w-full h-[120%] object-cover object-top transition-opacity duration-1000 ${videoOpacity === 0 ? 'opacity-0' : 'opacity-100'}`}
+          src="/videos/Herodesambalab2.mp4"
+          onTimeUpdate={(e) => {
+            const video = e.currentTarget;
+            if (video.duration) {
+              // Fade out 1s before end
+              if (video.currentTime > video.duration - 1) {
+                setVideoOpacity(0);
+              }
+              // Reset opacity at start (looped)
+              if (video.currentTime < 1 && videoOpacity === 0) {
+                setVideoOpacity(1);
+              }
+            }
+          }}
         />
         {/* Modern Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />

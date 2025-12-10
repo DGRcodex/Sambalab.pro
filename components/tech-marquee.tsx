@@ -35,7 +35,7 @@ export default function TechMarquee() {
                 </p>
             </div>
 
-            <Marquee gradient={true} gradientColor="white" speed={40} pauseOnHover={true}>
+            <Marquee gradient={true} gradientColor="white" speed={40} pauseOnHover={true} autoFill={true}>
                 {technologies.map((tech, index) => (
                     <div key={index} className="flex flex-col items-center justify-center mx-8 group cursor-default">
                         <tech.icon className="w-10 h-10 text-gray-300 group-hover:text-purple-600 transition-colors duration-300 mb-2" />
