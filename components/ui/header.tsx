@@ -25,7 +25,7 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center gap-6 text-sm font-medium text-purple-900">
               <li>
                 <Link
-                  href="#services"
+                  href="/#services"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
                   {t.navbar.services}
@@ -33,7 +33,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#proyectos"
+                  href="/#proyectos"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
                   {t.navbar.projects}
@@ -51,7 +51,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#contacto"
+                  href="/#contacto"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
                   {t.navbar.contact}
