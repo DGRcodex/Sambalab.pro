@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import emailjs from "@emailjs/browser";
 import { FaWhatsapp, FaPaperPlane, FaCheckCircle } from "react-icons/fa";
 
 type FormData = {
@@ -54,26 +53,20 @@ export default function Contacto() {
     setStatus("loading");
 
     try {
-      // IMPORTANTE: Debes configurar tu cuenta de EmailJS y reemplazar estos valores
-      // 1. Crea una cuenta en https://www.emailjs.com/
-      // 2. Crea un servicio de email
-      // 3. Crea una plantilla de email
-      // 4. Obtén tu Public Key desde Account > API Keys
-
-      await emailjs.send(
-        "YOUR_SERVICE_ID", // Reemplazar con tu Service ID
-        "YOUR_TEMPLATE_ID", // Reemplazar con tu Template ID
-        {
-          from_name: formData.name,
-          from_company: formData.company,
-          from_email: formData.email,
-          from_phone: formData.phone,
-          service_type: formData.service,
-          message: formData.message,
-          to_email: "dgr@sambalab.pro",
+      // Send request to internal API route
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        "YOUR_PUBLIC_KEY" // Reemplazar con tu Public Key
-      );
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
 
       setStatus("success");
       setFormData({
@@ -94,7 +87,9 @@ export default function Contacto() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -110,23 +105,33 @@ export default function Contacto() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-gray-50" id="contacto">
+    <section
+      className="relative bg-gradient-to-b from-white to-gray-50"
+      id="contacto"
+    >
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239333ea' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239333ea' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-8 md:py-14 border-t border-gray-200">
           {/* Header */}
-          <div className="max-w-3xl mx-auto text-center pb-8 md:pb-10" data-aos="fade-up">
+          <div
+            className="max-w-3xl mx-auto text-center pb-8 md:pb-10"
+            data-aos="fade-up"
+          >
             <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
               Conversemos
             </h2>
             <p className="text-lg text-gray-600">
-              ¿Tienes un proyecto en mente? Cuéntanos cómo podemos ayudarte a llevarlo a producción.
+              ¿Tienes un proyecto en mente? Cuéntanos cómo podemos ayudarte a
+              llevarlo a producción.
             </p>
           </div>
 
@@ -188,7 +193,10 @@ export default function Contacto() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {/* Name */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Nombre completo *
                     </label>
                     <input
@@ -197,16 +205,22 @@ export default function Contacto() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.name ? "border-red-400" : "border-gray-200"
-                        } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
+                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${
+                        errors.name ? "border-red-400" : "border-gray-200"
+                      } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="Juan Pérez"
                     />
-                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+                    {errors.name && (
+                      <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                    )}
                   </div>
 
                   {/* Company */}
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="company"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Empresa *
                     </label>
                     <input
@@ -215,16 +229,24 @@ export default function Contacto() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.company ? "border-red-400" : "border-gray-200"
-                        } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
+                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${
+                        errors.company ? "border-red-400" : "border-gray-200"
+                      } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="Tu Empresa S.A."
                     />
-                    {errors.company && <p className="text-red-500 text-sm mt-1">{errors.company}</p>}
+                    {errors.company && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.company}
+                      </p>
+                    )}
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Email corporativo *
                     </label>
                     <input
@@ -233,16 +255,22 @@ export default function Contacto() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.email ? "border-red-400" : "border-gray-200"
-                        } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
+                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${
+                        errors.email ? "border-red-400" : "border-gray-200"
+                      } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="contacto@empresa.com"
                     />
-                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+                    {errors.email && (
+                      <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                    )}
                   </div>
 
                   {/* Phone */}
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Teléfono *
                     </label>
                     <input
@@ -251,16 +279,22 @@ export default function Contacto() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.phone ? "border-red-400" : "border-gray-200"
-                        } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
+                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${
+                        errors.phone ? "border-red-400" : "border-gray-200"
+                      } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="+56 9 1234 5678"
                     />
-                    {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+                    {errors.phone && (
+                      <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                    )}
                   </div>
 
                   {/* Service Type */}
                   <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="service"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Tipo de servicio *
                     </label>
                     <select
@@ -268,23 +302,45 @@ export default function Contacto() {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.service ? "border-red-400" : "border-gray-200"
-                        } text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
+                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${
+                        errors.service ? "border-red-400" : "border-gray-200"
+                      } text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                     >
-                      <option value="" className="bg-white">Selecciona un servicio</option>
-                      <option value="desarrollo-web" className="bg-white">Desarrollo Web</option>
-                      <option value="desarrollo-movil" className="bg-white">Desarrollo Móvil</option>
-                      <option value="integracion-ia" className="bg-white">Integración de IA</option>
-                      <option value="consultoria" className="bg-white">Consultoría Técnica</option>
-                      <option value="mvp" className="bg-white">MVP / Prototipo</option>
-                      <option value="otro" className="bg-white">Otro</option>
+                      <option value="" className="bg-white">
+                        Selecciona un servicio
+                      </option>
+                      <option value="desarrollo-web" className="bg-white">
+                        Desarrollo Web
+                      </option>
+                      <option value="desarrollo-movil" className="bg-white">
+                        Desarrollo Móvil
+                      </option>
+                      <option value="integracion-ia" className="bg-white">
+                        Integración de IA
+                      </option>
+                      <option value="consultoria" className="bg-white">
+                        Consultoría Técnica
+                      </option>
+                      <option value="mvp" className="bg-white">
+                        MVP / Prototipo
+                      </option>
+                      <option value="otro" className="bg-white">
+                        Otro
+                      </option>
                     </select>
-                    {errors.service && <p className="text-red-500 text-sm mt-1">{errors.service}</p>}
+                    {errors.service && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.service}
+                      </p>
+                    )}
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Cuéntanos sobre tu proyecto *
                     </label>
                     <textarea
@@ -293,25 +349,31 @@ export default function Contacto() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.message ? "border-red-400" : "border-gray-200"
-                        } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none`}
+                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${
+                        errors.message ? "border-red-400" : "border-gray-200"
+                      } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none`}
                       placeholder="Describe tu proyecto, objetivos y timeline..."
                     />
-                    {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+                    {errors.message && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.message}
+                      </p>
+                    )}
                   </div>
 
                   {/* Submit Button */}
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className={`w-full py-4 px-6 rounded-lg font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 ${status === "loading"
-                      ? "bg-purple-400 cursor-not-allowed"
-                      : status === "success"
+                    className={`w-full py-4 px-6 rounded-lg font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 ${
+                      status === "loading"
+                        ? "bg-purple-400 cursor-not-allowed"
+                        : status === "success"
                         ? "bg-green-500"
                         : status === "error"
-                          ? "bg-red-500"
-                          : "bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transform hover:scale-105"
-                      }`}
+                        ? "bg-red-500"
+                        : "bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transform hover:scale-105"
+                    }`}
                   >
                     {status === "loading" && (
                       <>

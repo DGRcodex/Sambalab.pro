@@ -29,7 +29,7 @@ export default function Hero() {
           muted
           playsInline
           className="w-full h-full object-cover"
-          src="/videos/sambalabherovideo.mp4"
+          src="/videos/Herodesambalab.mp4"
         />
         {/* Modern Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
