@@ -88,18 +88,6 @@ export default function MobileMenu() {
               {t.navbar.contact}
             </Link>
           </li>
-          {/* Mobile Language Switcher */}
-          <li>
-            <button
-              onClick={() => {
-                setLanguage(language === 'es' ? 'en' : 'es');
-                setMobileNavOpen(false);
-              }}
-              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center uppercase"
-            >
-              {language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
-            </button>
-          </li>
         </ul>
       </nav>
     </div>

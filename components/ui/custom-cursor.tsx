@@ -40,7 +40,7 @@ export default function CustomCursor() {
         <>
             {/* Main dot */}
             <motion.div
-                className="fixed top-0 left-0 w-4 h-4 bg-purple-500 rounded-full pointer-events-none z-[9999] mix-blend-difference"
+                className="hidden md:block fixed top-0 left-0 w-4 h-4 bg-purple-500 rounded-full pointer-events-none z-[9999] mix-blend-difference"
                 animate={{
                     x: mousePosition.x - 8,
                     y: mousePosition.y - 8,
@@ -55,7 +55,7 @@ export default function CustomCursor() {
             />
             {/* Trailing ring */}
             <motion.div
-                className="fixed top-0 left-0 w-8 h-8 border border-purple-400 rounded-full pointer-events-none z-[9998] opacity-50"
+                className="hidden md:block fixed top-0 left-0 w-8 h-8 border border-purple-400 rounded-full pointer-events-none z-[9998] opacity-50"
                 animate={{
                     x: mousePosition.x - 16,
                     y: mousePosition.y - 16,

@@ -135,6 +135,21 @@ export type Dictionary = {
             bio: string;
         }[];
     };
+    newsletter: {
+        title: string;
+        subtitle: string;
+        emailPlaceholder: string;
+        subscribeButton: string;
+        subscribing: string;
+        success: string;
+        successMessage: string;
+        error: string;
+        errorMessage: string;
+        validation: {
+            email: string;
+            emailInvalid: string;
+        };
+    };
 };
 
 export const translations: Record<'es' | 'en', Dictionary> = {
@@ -142,7 +157,7 @@ export const translations: Record<'es' | 'en', Dictionary> = {
         navbar: {
             services: "Servicios",
             projects: "Proyectos",
-            blog: "Blog",
+            blog: "LinkedIn",
             contact: "Contacto",
         },
         hero: {
@@ -325,13 +340,28 @@ export const translations: Record<'es' | 'en', Dictionary> = {
                     bio: "Optimiza cadenas de valor, datos operacionales y tableros de control. Enfocado en confiabilidad, costos y trazabilidad para decisiones con datos en tiempo real.",
                 },
             ]
+        },
+        newsletter: {
+            title: "Mantente Actualizado",
+            subtitle: "Suscríbete a nuestro newsletter para estar informado de nuestras últimas ofertas y actualizaciones tecnológicas.",
+            emailPlaceholder: "Tu correo electrónico...",
+            subscribeButton: "Suscribirse",
+            subscribing: "Suscribiendo...",
+            success: "¡Suscrito!",
+            successMessage: "¡Gracias por suscribirte! Estaremos en contacto.",
+            error: "Error",
+            errorMessage: "Algo salió mal. Por favor intenta de nuevo.",
+            validation: {
+                email: "El correo es requerido",
+                emailInvalid: "Dirección de correo inválida"
+            }
         }
     },
     en: {
         navbar: {
             services: "Services",
             projects: "Projects",
-            blog: "Blog",
+            blog: "LinkedIn",
             contact: "Contact",
         },
         hero: {
@@ -514,6 +544,21 @@ export const translations: Record<'es' | 'en', Dictionary> = {
                     bio: "Optimizes value chains, operational data, and control dashbaords. Focused on reliability, costs, and traceability for real-time data decisions.",
                 },
             ]
+        },
+        newsletter: {
+            title: "Stay Updated",
+            subtitle: "Subscribe to our newsletter to stay informed about our latest offers and technical updates.",
+            emailPlaceholder: "Your email address...",
+            subscribeButton: "Subscribe",
+            subscribing: "Subscribing...",
+            success: "Subscribed!",
+            successMessage: "Thanks for subscribing! We'll be in touch.",
+            error: "Error",
+            errorMessage: "Something went wrong. Please try again.",
+            validation: {
+                email: "Email is required",
+                emailInvalid: "Invalid email address"
+            }
         }
     },
 };

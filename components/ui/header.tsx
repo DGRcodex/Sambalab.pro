@@ -57,22 +57,24 @@ export default function Header() {
                   {t.navbar.contact}
                 </Link>
               </li>
-              {/* Language Switcher */}
-              <li className="ml-4 border-l border-purple-300 pl-4">
-                <button
-                  onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
-                  className="flex items-center gap-1 font-bold text-xs uppercase hover:text-purple-600 transition-colors"
-                >
-                  <span className={language === 'es' ? 'text-purple-700' : 'text-gray-400'}>ES</span>
-                  <span className="text-gray-400">/</span>
-                  <span className={language === 'en' ? 'text-purple-700' : 'text-gray-400'}>EN</span>
-                </button>
-              </li>
             </ul>
           </nav>
 
-          {/* Menú móvil */}
-          <MobileMenu />
+          {/* Mobile Controls & Language Toggle */}
+          <div className="flex items-center gap-4 ml-8">
+            {/* Language Switcher (Visible on Mobile & Desktop) */}
+            <button
+              onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
+              className="font-bold text-sm uppercase text-purple-700 hover:text-black transition-colors px-3 py-1 border border-purple-200 rounded-full bg-white/50 hover:bg-white"
+              aria-label="Switch Language"
+            >
+              {language === 'es' ? 'EN' : 'ES'}
+            </button>
+
+            {/* Menú móvil */}
+            <MobileMenu />
+          </div>
+
         </div>
       </div>
     </header>
