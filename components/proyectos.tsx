@@ -48,10 +48,10 @@ export default function Proyectos() {
                 <div className="py-12 md:py-20 border-t border-gray-200">
                     {/* Header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" data-aos="fade-up">
-                        <h2 className="h1 mb-4 text-black font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">
+                        <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
                             Proyectos destacados
                         </h2>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-lg text-gray-600">
                             Soluciones reales que transforman industrias. Desde agricultura hasta
                             análisis de datos, creamos plataformas que generan impacto medible.
                         </p>

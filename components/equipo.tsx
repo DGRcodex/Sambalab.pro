@@ -65,10 +65,10 @@ export default function Equipo() {
         <div className="py-12 md:py-20 border-t border-gray-800">
           {/* Encabezado */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h1 mb-4 text-black font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">
+            <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
               Nuestro equipo
             </h2>
-            <p className="text-xl text-gray-700">
+            <p className="text-lg text-gray-700">
               Trabajamos desde la colaboración para crear plataformas útiles y medibles.
               Combinamos ingeniería, diseño y estrategia para llevar MVPs a producción
               rápido, con arquitectura que escala y soporte cercano.

@@ -6,6 +6,7 @@ export const metadata = {
 }
 
 import Hero from '@/components/hero'
+import TechMarquee from '@/components/tech-marquee'
 import Features from '@/components/features'
 import FinalFeatures from '@/components/final-features'
 import Newsletter from '@/components/newsletter'
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <TechMarquee />
       <Features />
       <Zigzag />
       <FinalFeatures />

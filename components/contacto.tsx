@@ -122,10 +122,10 @@ export default function Contacto() {
         <div className="py-8 md:py-14 border-t border-gray-200">
           {/* Header */}
           <div className="max-w-3xl mx-auto text-center pb-8 md:pb-10" data-aos="fade-up">
-            <h2 className="h1 mb-4 text-black font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">
+            <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
               Conversemos
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg text-gray-600">
               ¿Tienes un proyecto en mente? Cuéntanos cómo podemos ayudarte a llevarlo a producción.
             </p>
           </div>
@@ -305,12 +305,12 @@ export default function Contacto() {
                     type="submit"
                     disabled={status === "loading"}
                     className={`w-full py-4 px-6 rounded-lg font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 ${status === "loading"
-                        ? "bg-purple-400 cursor-not-allowed"
-                        : status === "success"
-                          ? "bg-green-500"
-                          : status === "error"
-                            ? "bg-red-500"
-                            : "bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transform hover:scale-105"
+                      ? "bg-purple-400 cursor-not-allowed"
+                      : status === "success"
+                        ? "bg-green-500"
+                        : status === "error"
+                          ? "bg-red-500"
+                          : "bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transform hover:scale-105"
                       }`}
                   >
                     {status === "loading" && (

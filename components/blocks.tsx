@@ -2,92 +2,97 @@
 import Image from "next/image";
 
 export default function Blocks() {
-  // Rutas ABSOLUTAS desde /public, respetando mayúsculas/minúsculas
-  const ICONS = [
-    "/iconos/Icono1.png",
-    "/iconos/Icono2.png",
-    "/iconos/Icono3.png",
-    "/iconos/Icono4.png",
-    "/iconos/Icono5.png",
-    "/iconos/Icono6.png",
-    "/iconos/Icono7.png", // por si luego agregas el séptimo
-  ];
-
   const items = [
     {
-      title: "Diseño web y UI/UX",
-      icon: ICONS[0],
-      desc:
-        "Diseñamos interfaces visuales modernas, accesibles y funcionales, con foco en la experiencia del usuario y coherencia estética para cada proyecto.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+      title: "Desarrollo Web y Móvil",
+      description: "Creamos aplicaciones web y móviles de alto rendimiento, escalables y con una experiencia de usuario excepcional.",
     },
     {
-      title: "Desarrollo de plataformas",
-      icon: ICONS[1],
-      desc:
-        "Creamos plataformas robustas y escalables usando Next.js, Django y Supabase. Integramos APIs, bases de datos y servicios en la nube.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+      ),
+      title: "Inteligencia Artificial",
+      description: "Implementamos soluciones de IA, machine learning y procesamiento de lenguaje natural para automatizar y optimizar procesos.",
     },
     {
-      title: "Automatización con IA",
-      icon: ICONS[2],
-      desc:
-        "Integramos modelos de lenguaje y visión computacional para optimizar tareas, enriquecer experiencias y reducir tiempos en flujos digitales.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+        </svg>
+      ),
+      title: "Análisis de Datos",
+      description: "Transformamos datos en insights accionables mediante dashboards interactivos y análisis predictivo.",
     },
     {
-      title: "Prototipado creativo",
-      icon: ICONS[3],
-      desc:
-        "Construimos MVPs, pruebas de concepto e interfaces interactivas para validar ideas rápidamente y adaptarlas a nuevos escenarios tecnológicos.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+      title: "Transformación Digital",
+      description: "Acompañamos a empresas en su proceso de digitalización, modernizando sistemas y flujos de trabajo.",
     },
     {
-      title: "Consultoría estratégica",
-      icon: ICONS[4],
-      desc:
-        "Acompañamos procesos de transformación digital con visión técnica y creativa. Desde arquitectura hasta marketing digital basado en datos.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      ),
+      title: "E-commerce",
+      description: "Desarrollamos tiendas online robustas y seguras, integradas con pasarelas de pago y sistemas de gestión.",
     },
     {
-      title: "Lenguaje, arte y tecnología",
-      icon: ICONS[5],
-      desc:
-        "Exploramos las fronteras entre IA, escritura creativa, arte visual e interacción humana. Creamos herramientas que combinan sentido, expresión y código.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+        </svg>
+      ),
+      title: "Diseño UX/UI",
+      description: "Diseñamos interfaces intuitivas y atractivas centradas en la experiencia del usuario y la conversión.",
     },
   ];
 
   return (
-    <section id="services">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+    <section className="relative bg-gray-50" id="services">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 pointer-events-none" />
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="py-16 md:py-24">
+
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Nuestros servicios</h2>
-            <p className="text-xl text-gray-400">
-              En Sambalab combinamos diseño, desarrollo e inteligencia artificial para crear soluciones digitales escalables, funcionales y creativas.
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
+            <h2 className="h1 mb-6 text-gray-900 font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">Nuestros servicios</h2>
+            <p className="text-xl text-gray-600 font-light">
+              Ofrecemos un abanico completo de soluciones tecnológicas para impulsar tu negocio al siguiente nivel.
             </p>
           </div>
 
           {/* Items */}
-          <div
-            className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none"
-            data-aos-id-blocks
-          >
-            {items.map((s, i) => (
+          <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
+            {items.map((item, index) => (
               <div
-                key={s.title}
-                className="relative flex flex-col items-center"
+                key={index}
+                className="relative flex flex-col items-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 h-full group"
                 data-aos="fade-up"
-                data-aos-delay={i * 100}
+                data-aos-delay={index * 100}
                 data-aos-anchor="[data-aos-id-blocks]"
               >
-                <Image
-                  src={s.icon}           // ← ruta absoluta desde /public
-                  alt={s.title}
-                  width={96}
-                  height={96}
-                  className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mb-4 object-contain"
-                  sizes="(min-width:1024px) 96px, (min-width:768px) 80px, 64px"
-                  priority={i < 3}
-                />
-                <h4 className="h4 mb-2">{s.title}</h4>
-                <p className="text-lg text-gray-400 text-center">{s.desc}</p>
+                <div className="w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center mb-6 group-hover:bg-purple-100 transition-colors duration-300">
+                  {item.icon}
+                </div>
+                <h4 className="h4 mb-4 text-gray-900 font-playfair font-bold text-xl text-center">{item.title}</h4>
+                <p className="text-lg text-gray-600 text-center leading-relaxed">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -95,5 +100,5 @@ export default function Blocks() {
         </div>
       </div>
     </section>
-  );
+  )
 }

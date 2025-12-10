@@ -8,6 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'sambalab-orange': '#FF6A3D',
+        'dark-bg': '#151515',
+        'light-bg': '#F4F4F4',
+        'dark-text': '#252525',
+        'light-text': '#FFFFFF',
         gray: {
           100: '#F6F3ED', // beige claro (fondo)
           200: '#EBE2D9',
