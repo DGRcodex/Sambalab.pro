@@ -2,9 +2,11 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '@/context/language-context'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
+  const { t, language, setLanguage } = useLanguage()
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
@@ -62,12 +64,12 @@ export default function MobileMenu() {
         <ul className="bg-gray-800 px-4 py-2">
           <li>
             <Link href="#services" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
-              Servicios
+              {t.navbar.services}
             </Link>
           </li>
           <li>
             <Link href="#proyectos" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
-              Proyectos
+              {t.navbar.projects}
             </Link>
           </li>
           <li>
@@ -78,13 +80,25 @@ export default function MobileMenu() {
               className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
               onClick={() => setMobileNavOpen(false)}
             >
-              Blog
+              {t.navbar.blog}
             </a>
           </li>
           <li>
             <Link href="#contacto" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
-              Contacto
+              {t.navbar.contact}
             </Link>
+          </li>
+          {/* Mobile Language Switcher */}
+          <li>
+            <button
+              onClick={() => {
+                setLanguage(language === 'es' ? 'en' : 'es');
+                setMobileNavOpen(false);
+              }}
+              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center uppercase"
+            >
+              {language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+            </button>
           </li>
         </ul>
       </nav>

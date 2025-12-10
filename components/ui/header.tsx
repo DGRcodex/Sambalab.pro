@@ -1,7 +1,11 @@
+'use client';
 import Link from 'next/link';
 import MobileMenu from './mobile-menu';
+import { useLanguage } from '@/context/language-context';
 
 export default function Header() {
+  const { language, setLanguage, t } = useLanguage();
+
   return (
     <header className="fixed w-full z-30 bg-purple-100 transition duration-300 hover:bg-purple-200 group">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -24,7 +28,7 @@ export default function Header() {
                   href="#services"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
-                  Servicios
+                  {t.navbar.services}
                 </Link>
               </li>
               <li>
@@ -32,7 +36,7 @@ export default function Header() {
                   href="#proyectos"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
-                  Proyectos
+                  {t.navbar.projects}
                 </Link>
               </li>
               <li>
@@ -42,7 +46,7 @@ export default function Header() {
                   rel="noopener noreferrer"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
-                  Blog
+                  {t.navbar.blog}
                 </a>
               </li>
               <li>
@@ -50,8 +54,19 @@ export default function Header() {
                   href="#contacto"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
-                  Contacto
+                  {t.navbar.contact}
                 </Link>
+              </li>
+              {/* Language Switcher */}
+              <li className="ml-4 border-l border-purple-300 pl-4">
+                <button
+                  onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
+                  className="flex items-center gap-1 font-bold text-xs uppercase hover:text-purple-600 transition-colors"
+                >
+                  <span className={language === 'es' ? 'text-purple-700' : 'text-gray-400'}>ES</span>
+                  <span className="text-gray-400">/</span>
+                  <span className={language === 'en' ? 'text-purple-700' : 'text-gray-400'}>EN</span>
+                </button>
               </li>
             </ul>
           </nav>

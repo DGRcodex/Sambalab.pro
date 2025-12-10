@@ -1,4 +1,9 @@
+'use client'
+import { useLanguage } from '@/context/language-context'
+
 export default function Features() {
+  const { t } = useLanguage()
+
   return (
     <section className="relative bg-gray-50">
       {/* Decorative background element */}
@@ -10,10 +15,10 @@ export default function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
             <h2 className="h1 mb-6 text-gray-900 font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
-              Lo que hacemos
+              {t.features.title}
             </h2>
             <p className="text-lg text-gray-600 font-light">
-              En Sambalab diseñamos productos digitales, desarrollamos plataformas a medida e integramos inteligencia artificial desde un enfoque creativo y técnico.
+              {t.features.subtitle}
             </p>
           </div>
 
@@ -27,11 +32,11 @@ export default function Features() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <div className="w-full h-48 relative mb-6 overflow-hidden rounded-xl bg-gray-50">
-                <img src="/servicios/feature-web-3d.png" alt="Diseño web 3D" className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" />
+                <img src="/servicios/feature-web-3d.png" alt={t.features.item1Title} className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" />
               </div>
-              <h4 className="h4 mb-3 font-playfair font-bold text-gray-900 text-xl">Diseño y desarrollo web</h4>
+              <h4 className="h4 mb-3 font-playfair font-bold text-gray-900 text-xl">{t.features.item1Title}</h4>
               <p className="text-base text-gray-600 text-center leading-relaxed">
-                Creamos experiencias digitales modernas: desde sitios institucionales hasta landings con diseño responsivo, optimización SEO y despliegue en la nube.
+                {t.features.item1Desc}
               </p>
             </div>
 
@@ -43,11 +48,11 @@ export default function Features() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <div className="w-full h-48 relative mb-6 overflow-hidden rounded-xl bg-gray-50">
-                <img src="/servicios/feature-ai-3d.png" alt="Software con IA 3D" className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" />
+                <img src="/servicios/feature-ai-3d.png" alt={t.features.item2Title} className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" />
               </div>
-              <h4 className="h4 mb-3 font-playfair font-bold text-gray-900 text-xl">Software a medida con IA</h4>
+              <h4 className="h4 mb-3 font-playfair font-bold text-gray-900 text-xl">{t.features.item2Title}</h4>
               <p className="text-base text-gray-600 text-center leading-relaxed">
-                Desarrollamos soluciones completas, desde el frontend al backend, integrando inteligencia artificial, APIs y automatización para potenciar tus procesos.
+                {t.features.item2Desc}
               </p>
             </div>
 
@@ -59,11 +64,11 @@ export default function Features() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <div className="w-full h-48 relative mb-6 overflow-hidden rounded-xl bg-gray-50">
-                <img src="/servicios/feature-creative-3d.png" alt="Proyectos Creativos 3D" className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" />
+                <img src="/servicios/feature-creative-3d.png" alt={t.features.item3Title} className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" />
               </div>
-              <h4 className="h4 mb-3 font-playfair font-bold text-gray-900 text-xl">Proyectos creativos</h4>
+              <h4 className="h4 mb-3 font-playfair font-bold text-gray-900 text-xl">{t.features.item3Title}</h4>
               <p className="text-base text-gray-600 text-center leading-relaxed">
-                Exploramos nuevas formas de interacción entre tecnología, lenguaje y cultura. Aplicamos IA, diseño generativo y herramientas interactivas.
+                {t.features.item3Desc}
               </p>
             </div>
 

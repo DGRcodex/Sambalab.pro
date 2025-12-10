@@ -7,8 +7,10 @@ import {
 import {
     SiNextdotjs, SiTypescript, SiTailwindcss, SiOpenai, SiSupabase, SiPostgresql, SiDjango, SiFastapi
 } from 'react-icons/si'
+import { useLanguage } from '@/context/language-context'
 
 export default function TechMarquee() {
+    const { t } = useLanguage()
     const technologies = [
         { name: 'React', icon: FaReact },
         { name: 'Next.js', icon: SiNextdotjs },
@@ -31,7 +33,7 @@ export default function TechMarquee() {
         <section className="py-10 bg-white border-b border-gray-100 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-6">
                 <p className="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest">
-                    Tecnologías que impulsan nuestras soluciones
+                    {t.techMarquee.title}
                 </p>
             </div>
 

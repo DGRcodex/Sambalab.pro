@@ -5,9 +5,11 @@ import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 import ParticlesBackground from '@/components/ui/particles-background';
 import { motion } from 'framer-motion';
+import { useLanguage } from '@/context/language-context';
 
 export default function Hero() {
   const [videoOpacity, setVideoOpacity] = useState(1);
+  const { t } = useLanguage();
 
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -60,7 +62,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto flex flex-col items-center justify-center z-10 pointer-events-auto">
           <h1 className="h1 mb-6 text-white font-playfair text-4xl sm:text-5xl lg:text-7xl font-normal tracking-tight drop-shadow-lg">
             <motion.span custom={0} initial="hidden" animate="visible" variants={textVariants} className="block">
-              Diseño, desarrollo e
+              {t.hero.title1}
             </motion.span>
             <br className="hidden md:block" />
             <motion.span
@@ -70,7 +72,7 @@ export default function Hero() {
               variants={textVariants}
               className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-purple-200 bg-300% animate-gradient"
             >
-              inteligencia con propósito
+              {t.hero.title2}
             </motion.span>
           </h1>
 
@@ -81,7 +83,7 @@ export default function Hero() {
             variants={textVariants}
             className="text-lg md:text-xl text-gray-100 mb-10 font-light max-w-2xl leading-relaxed drop-shadow-md"
           >
-            En Sambalab creamos plataformas, experiencias y herramientas digitales que combinan creatividad, tecnología y visión estratégica.
+            {t.hero.subtitle}
           </motion.p>
 
           <motion.div
@@ -96,7 +98,7 @@ export default function Hero() {
                 className="btn text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 w-full sm:w-auto rounded-full px-8 py-4 text-lg font-medium shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1"
                 href="#services"
               >
-                Conoce nuestros servicios
+                {t.hero.ctaService}
               </a>
             </div>
             <div>
@@ -104,7 +106,7 @@ export default function Hero() {
                 className="btn text-white bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 w-full sm:w-auto rounded-full px-8 py-4 text-lg font-medium shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 href="#contacto"
               >
-                Escríbenos
+                {t.hero.ctaContact}
               </a>
             </div>
           </motion.div>

@@ -1,6 +1,7 @@
 import './css/style.css'
 
 import { Inter, Architects_Daughter, Playfair_Display } from 'next/font/google'
+import { LanguageProvider } from '@/context/language-context'
 
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
@@ -39,13 +40,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${architects_daughter.variable} ${playfair.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
-        <CustomCursor />
-        <ScrollProgress />
-        <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <LanguageProvider>
+          <CustomCursor />
+          <ScrollProgress />
+          <div className="flex flex-col min-h-screen overflow-hidden">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   )

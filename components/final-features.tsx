@@ -1,4 +1,9 @@
+'use client'
+import { useLanguage } from '@/context/language-context'
+
 export default function FinalFeatures() {
+  const { t } = useLanguage()
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -7,7 +12,7 @@ export default function FinalFeatures() {
           {/* Section title */}
           <div className="max-w-3xl mx-auto text-center py-12">
             <h3 className="h1 mb-4 text-white font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">
-              Imaginamos, prototipamos, creamos
+              {t.finalFeatures.title}
             </h3>
           </div>
 
@@ -17,30 +22,29 @@ export default function FinalFeatures() {
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-blocks]">
               <div className="w-full h-64 relative mb-6 overflow-hidden rounded-lg">
-                <img src="/images/sambalab-prototyping.webp" alt="Prototipado rápido" className="w-full h-full object-cover" />
+                <img src="/images/sambalab-prototyping.webp" alt={t.finalFeatures.item1Title} className="w-full h-full object-cover" />
               </div>
-              <h4 className="h4 mb-2 font-playfair font-normal">Prototipado rápido</h4>
-              <p className="text-lg text-gray-400 text-center">Damos forma a ideas complejas a través de prototipos funcionales. Creamos MVPs, simuladores y flujos interactivos para validar conceptos desde el inicio.</p>
+              <h4 className="h4 mb-2 font-playfair font-normal">{t.finalFeatures.item1Title}</h4>
+              <p className="text-lg text-gray-400 text-center">{t.finalFeatures.item1Desc}</p>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
               <div className="w-full h-64 relative mb-6 overflow-hidden rounded-lg">
-                <img src="/images/sambalab-ai.webp" alt="Inteligencia artificial creativa" className="w-full h-full object-cover" />
+                <img src="/images/sambalab-ai.webp" alt={t.finalFeatures.item2Title} className="w-full h-full object-cover" />
               </div>
-              <h4 className="h4 mb-2 font-playfair font-normal">IA generativa aplicada</h4>
-              <p className="text-lg text-gray-400 text-center">Utilizamos modelos de lenguaje, visión por computador y herramientas generativas para crear nuevas formas de diseño, contenido y automatización creativa.</p>
+              <h4 className="h4 mb-2 font-playfair font-normal">{t.finalFeatures.item2Title}</h4>
+              <p className="text-lg text-gray-400 text-center">{t.finalFeatures.item2Desc}</p>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
               <div className="w-full h-64 relative mb-6 overflow-hidden rounded-lg">
-                <img src="/images/sambalab-lab.webp" alt="Laboratorio Digital" className="w-full h-full object-cover" />
+                <img src="/images/sambalab-lab.webp" alt={t.finalFeatures.item3Title} className="w-full h-full object-cover" />
               </div>
-              <h4 className="h4 mb-2 font-playfair font-normal">Laboratorio digital</h4>
-              <p className="text-lg text-gray-400 text-center">Experimentamos con interfaces, datos, interacción y arte. Sambalab es también un espacio de prueba, juego y exploración de tecnologías emergentes con propósito.</p>
+              <h4 className="h4 mb-2 font-playfair font-normal">{t.finalFeatures.item3Title}</h4>
+              <p className="text-lg text-gray-400 text-center">{t.finalFeatures.item3Desc}</p>
             </div>
-
           </div>
 
         </div>

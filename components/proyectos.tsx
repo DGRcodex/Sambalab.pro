@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useLanguage } from '@/context/language-context'
 
 type Project = {
     id: string;
@@ -11,37 +12,34 @@ type Project = {
     category: string;
 };
 
-const projects: Project[] = [
+const staticProjectsData = [
     {
         id: "agricola",
-        title: "Plataforma de Gestión Agrícola con IA",
-        description:
-            "Sistema integral de trazabilidad y optimización de cultivos que integra visión computacional para monitoreo de parcelas, predicción de rendimiento y análisis de suelo en tiempo real. Permite a productores tomar decisiones basadas en datos satelitales y modelos de IA.",
         technologies: ["Next.js", "Python", "TensorFlow", "PostgreSQL", "AWS"],
         image: "/proyectos/agricola.png",
-        category: "Agricultura & IA",
     },
     {
         id: "marketplace",
-        title: "Marketplace B2B para Servicios Profesionales",
-        description:
-            "Plataforma de conexión entre empresas y consultores especializados con sistema de matching inteligente, gestión de proyectos, pagos seguros y evaluaciones. Facilita la contratación de talento técnico y estratégico con transparencia y eficiencia.",
         technologies: ["Django", "React", "Stripe", "Redis", "Docker"],
         image: "/proyectos/marketplace.png",
-        category: "E-commerce & B2B",
     },
     {
         id: "analytics",
-        title: "Dashboard de Análisis en Tiempo Real",
-        description:
-            "Sistema de visualización y análisis de métricas operacionales con actualización en tiempo real. Integra múltiples fuentes de datos, genera reportes automatizados y alertas predictivas para optimización de procesos industriales y logísticos.",
         technologies: ["Vue.js", "Node.js", "InfluxDB", "Grafana", "WebSockets"],
         image: "/proyectos/analytics.png",
-        category: "Data Analytics",
     },
 ];
 
 export default function Proyectos() {
+    const { t } = useLanguage()
+
+    const projects: Project[] = staticProjectsData.map((proj, idx) => ({
+        ...proj,
+        title: t.projects.items[idx].title,
+        description: t.projects.items[idx].description,
+        category: t.projects.items[idx].category,
+    }));
+
     return (
         <section className="bg-gradient-to-b from-gray-50 to-white" id="proyectos">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -49,11 +47,10 @@ export default function Proyectos() {
                     {/* Header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" data-aos="fade-up">
                         <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
-                            Proyectos destacados
+                            {t.projects.title}
                         </h2>
                         <p className="text-lg text-gray-600">
-                            Soluciones reales que transforman industrias. Desde agricultura hasta
-                            análisis de datos, creamos plataformas que generan impacto medible.
+                            {t.projects.subtitle}
                         </p>
                     </div>
 
@@ -112,13 +109,13 @@ export default function Proyectos() {
                     {/* CTA */}
                     <div className="text-center mt-12" data-aos="fade-up" data-aos-delay="300">
                         <p className="text-gray-600 mb-4">
-                            ¿Tienes un proyecto en mente? Conversemos sobre cómo podemos ayudarte.
+                            {t.projects.ctaTitle}
                         </p>
                         <a
                             href="#contacto"
                             className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                         >
-                            Iniciar proyecto
+                            {t.projects.ctaButton}
                         </a>
                     </div>
                 </div>

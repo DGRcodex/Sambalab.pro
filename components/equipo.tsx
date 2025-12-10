@@ -2,6 +2,7 @@
 "use client";
 
 import Image from "next/image";
+import { useLanguage } from '@/context/language-context'
 
 type Member = {
   id: "daniel" | "pedro" | "jorge" | "mauro";
@@ -15,50 +16,39 @@ type Member = {
 // Cambia esta extensión según tus archivos reales hice un cambio(png | jpg | webp)
 const EXT = "png";
 
-const team: Member[] = [
+const staticTeamData = [
   {
     id: "daniel",
     name: "Daniel García",
-    role: "Fundador · Arquitectura técnica",
     src: `/equipo/Daniel.${EXT}`,
-    tagline:
-      "Full Stack con foco en backend e IA. Integra lenguaje y visión en procesos reales.",
-    bio:
-      "Lidera Sambalab orientando decisiones técnicas hacia impacto medible. Diseña arquitecturas seguras y escalables, integra modelos de IA y entrega MVPs en días, con métricas claras y soporte cercano.",
   },
   {
     id: "pedro",
     name: "Pedro García Moretti",
-    role: "Director de Negocios y Operaciones",
     src: `/equipo/pedro.${EXT}`,
-    tagline:
-      "Estrategia comercial y operación. +30 años impulsando crecimiento en servicios y B2B.",
-    bio:
-      "Orquesta la expansión comercial, pricing y eficiencia operativa. Alinea roadmap, KPIs y propuesta de valor para acelerar adopción y retorno sin costos fijos innecesarios.",
   },
   {
     id: "jorge",
     name: "Jorge Gordillo",
-    role: "Consultor Senior",
     src: `/equipo/jorge.${EXT}`,
-    tagline:
-      "Ingeniería, negocios y producto. Experiencia en pagos digitales y desarrollo de ecosistemas.",
-    bio:
-      "Conecta estrategia, producto y go-to-market. Transforma procesos en flujos medibles y escalables, priorizando conversión, retención y tiempo a producción.",
   },
   {
     id: "mauro",
     name: "Mauricio Geldes Díaz",
-    role: "Consultor Senior",
     src: `/equipo/mauro.${EXT}`,
-    tagline:
-      "Industrial y Agrónomo, MBA. Operaciones complejas en agro y supply.",
-    bio:
-      "Optimiza cadenas de valor, datos operacionales y tableros de control. Enfocado en confiabilidad, costos y trazabilidad para decisiones con datos en tiempo real.",
   },
 ];
 
 export default function Equipo() {
+  const { t } = useLanguage()
+
+  const team: Member[] = staticTeamData.map((member, idx) => ({
+    ...member,
+    role: t.team.members[idx].role,
+    tagline: t.team.members[idx].tagline,
+    bio: t.team.members[idx].bio,
+  }) as Member);
+
   return (
     <section className="bg-purple-100" id="equipo">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -66,12 +56,10 @@ export default function Equipo() {
           {/* Encabezado */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
-              Nuestro equipo
+              {t.team.title}
             </h2>
             <p className="text-lg text-gray-700">
-              Trabajamos desde la colaboración para crear plataformas útiles y medibles.
-              Combinamos ingeniería, diseño y estrategia para llevar MVPs a producción
-              rápido, con arquitectura que escala y soporte cercano.
+              {t.team.subtitle}
             </p>
           </div>
 
