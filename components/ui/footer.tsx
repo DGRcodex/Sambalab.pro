@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useLanguage } from '@/context/language-context'
 
 export default function Footer() {
@@ -17,10 +18,14 @@ export default function Footer() {
             {/* Branding */}
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
-                <Link href="/" className="block" aria-label="Sambalab">
-                  <span className="font-bold text-lg text-gray-900 hover:text-purple-800 transition duration-150 ease-in-out">
-                    Sambalab
-                  </span>
+                <Link href="/" className="inline-block" aria-label="Sambalab">
+                  <Image
+                    src="/sambalablogo.png"
+                    alt="Sambalab Logo"
+                    width={240}
+                    height={80}
+                    className="w-auto h-20"
+                  />
                 </Link>
               </div>
               <div className="text-gray-500">

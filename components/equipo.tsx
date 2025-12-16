@@ -13,29 +13,26 @@ type Member = {
   bio: string;
 };
 
-// Cambia esta extensión según tus archivos reales hice un cambio(png | jpg | webp)
-const EXT = "png";
-
 const staticTeamData = [
   {
     id: "daniel",
     name: "Daniel García",
-    src: `/equipo/Daniel.${EXT}`,
+    src: "/equipo/danisambalab.png",
   },
   {
     id: "pedro",
     name: "Pedro García Moretti",
-    src: `/equipo/pedro.${EXT}`,
+    src: "/equipo/pedro.jpeg",
   },
   {
     id: "jorge",
     name: "Jorge Gordillo",
-    src: `/equipo/jorge.${EXT}`,
+    src: "/equipo/jorge.png",
   },
   {
     id: "mauro",
     name: "Mauricio Geldes Díaz",
-    src: `/equipo/mauro.${EXT}`,
+    src: "/equipo/mauro.png",
   },
 ];
 

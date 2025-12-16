@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link';
 import MobileMenu from './mobile-menu';
 import { useLanguage } from '@/context/language-context';
@@ -9,14 +10,19 @@ export default function Header() {
   return (
     <header className="fixed w-full z-30 bg-purple-100 transition duration-300 hover:bg-purple-200 group">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-14">
+        <div className="flex items-center justify-between h-16">
 
           {/* Logo y branding */}
           <div className="shrink-0 mr-4">
             <Link href="/" className="block" aria-label="Sambalab">
-              <span className="font-bold text-lg text-purple-700 group-hover:text-black transition duration-150 ease-in-out">
-                Sambalab
-              </span>
+              <Image
+                src="/sambalablogo.png"
+                alt="Sambalab Logo"
+                width={240}
+                height={80}
+                className="w-auto h-16 md:h-20"
+                priority
+              />
             </Link>
           </div>
 
