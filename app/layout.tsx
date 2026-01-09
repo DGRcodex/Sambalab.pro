@@ -1,5 +1,8 @@
 import './css/style.css'
 
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import { Inter, Architects_Daughter, Playfair_Display } from 'next/font/google'
 import { LanguageProvider } from '@/context/language-context'
 
@@ -47,6 +50,8 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <Analytics />
+            <SpeedInsights />
           </div>
         </LanguageProvider>
       </body>
