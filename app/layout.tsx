@@ -7,11 +7,8 @@ import Script from "next/script"
 import { Inter, Architects_Daughter, Playfair_Display } from 'next/font/google'
 import { LanguageProvider } from '@/context/language-context'
 
-import Header from '@/components/ui/header'
-import Footer from '@/components/ui/footer'
-import CustomCursor from '@/components/ui/custom-cursor'
-import ScrollProgress from '@/components/ui/scroll-progress'
 import SchemaMarkup from '@/components/seo/SchemaMarkup'
+import LayoutShell from '@/components/ui/layout-shell'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -34,12 +31,12 @@ const playfair = Playfair_Display({
 
 export const metadata = {
   metadataBase: new URL('https://sambalab.pro'),
-  title: 'Sambalab - Laboratorio Técnico y Desarrollo de Software con IA',
-  description: 'Agencia de desarrollo de software, diseño web corporativo e integración de inteligencia artificial. Convertimos ideas complejas en infraestructura digital escalable.',
-  keywords: ['Desarrollo de Software', 'Inteligencia Artificial', 'Web Design', 'Next.js', 'Desarrollo MVP', 'Arquitectura Cloud', 'Agencia de Desarrollo'],
+  title: 'Sambalab - Laboratorio de Ingeniería Digital y Producto',
+  description: 'Ingeniería de software profesional, producto digital end-to-end y co-creación estratégica. Dominamos las herramientas más avanzadas — incluida la IA — para construir plataformas que escalan desde el día uno.',
+  keywords: ['Ingeniería de Software', 'Producto Digital', 'Co-creación', 'Desarrollo End-to-End', 'MVP Escalable', 'Arquitectura Cloud', 'Next.js', 'IA Aplicada'],
   openGraph: {
-    title: 'Sambalab - Laboratorio Técnico y Desarrollo de Software con IA',
-    description: 'Creamos plataformas, experiencias y herramientas digitales que combinan creatividad, tecnología y visión estratégica.',
+    title: 'Sambalab — Ingeniería de Producto y Co-creación Digital',
+    description: 'Construimos productos digitales completos con las herramientas más avanzadas del mercado. Desde la idea hasta producción, solos o contigo.',
     url: 'https://sambalab.pro',
     siteName: 'Sambalab',
     images: [
@@ -55,8 +52,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sambalab - Laboratorio Técnico y Desarrollo con IA',
-    description: 'Creamos infraestructura digital con propósito. Desarrollo Full Stack y AI.',
+    title: 'Sambalab — Ingeniería de Producto y Co-creación Digital',
+    description: 'Ingeniería de producto end-to-end. IA, Cloud, y código profesional que escala.',
     images: ['/sambalablogo.png'],
   },
 }
@@ -73,26 +70,23 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${architects_daughter.variable} ${playfair.variable} font-inter antialiased bg-slate-50 text-gray-900 tracking-tight`}>
         <LanguageProvider>
-          <CustomCursor />
-          <ScrollProgress />
-          <div className="flex flex-col min-h-screen overflow-hidden">
-            <Header />
+          <LayoutShell>
             {children}
-            <Footer />
-            <Analytics />
-            <SpeedInsights />
-            <Script id="microsoft-clarity" strategy="afterInteractive">
-              {`
-                (function(c,l,a,r,i,t,y){
-                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-                })(window, document, "clarity", "script", "uyt3jfu02l");
-              `}
-            </Script>
-          </div>
+          </LayoutShell>
+          <Analytics />
+          <SpeedInsights />
+          <Script id="microsoft-clarity" strategy="afterInteractive">
+            {`
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "uyt3jfu02l");
+            `}
+          </Script>
         </LanguageProvider>
       </body>
     </html>
   )
 }
+

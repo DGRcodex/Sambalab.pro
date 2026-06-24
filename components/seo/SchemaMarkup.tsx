@@ -5,7 +5,7 @@ export default function SchemaMarkup() {
     "name": "Sambalab",
     "url": "https://sambalab.pro",
     "logo": "https://sambalab.pro/sambalablogo.png",
-    "description": "Agencia de desarrollo de software, diseño web e inteligencia artificial.",
+    "description": "Laboratorio de ingeniería digital. Desarrollamos productos de software completos, desde MVPs hasta plataformas complejas, utilizando las herramientas más avanzadas del mercado.",
     "email": "contacto@sambalab.pro",
     "sameAs": [
       "https://www.linkedin.com/company/101243899",
