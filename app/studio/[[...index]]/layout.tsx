@@ -9,10 +9,8 @@ export default function StudioLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body style={{ margin: 0, padding: 0, height: '100vh' }}>
-        {children}
-      </body>
-    </html>
+    <div style={{ margin: 0, padding: 0, height: '100vh' }}>
+      {children}
+    </div>
   );
 }

@@ -157,7 +157,7 @@ export const translations: Record<'es' | 'en', Dictionary> = {
         navbar: {
             services: "Servicios",
             projects: "Proyectos",
-            blog: "LinkedIn",
+            blog: "Lab Notes",
             contact: "Contacto",
         },
         hero: {
@@ -361,7 +361,7 @@ export const translations: Record<'es' | 'en', Dictionary> = {
         navbar: {
             services: "Services",
             projects: "Projects",
-            blog: "LinkedIn",
+            blog: "Lab Notes",
             contact: "Contact",
         },
         hero: {
