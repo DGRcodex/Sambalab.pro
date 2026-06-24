@@ -73,15 +73,13 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/company/sambalab/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/labnotes"
               className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
               onClick={() => setMobileNavOpen(false)}
             >
               {t.navbar.blog}
-            </a>
+            </Link>
           </li>
           <li>
             <Link href="/#contacto" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>

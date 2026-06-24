@@ -50,7 +50,7 @@ export default function Footer() {
               <div className="text-sm">
                 <h6 className="text-gray-600 font-medium mb-1">{t.footer.resources}</h6>
                 <ul>
-                  <li className="mb-1"><a href="https://www.linkedin.com/company/sambalab/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-purple-700">{t.footer.links.blog}</a></li>
+                  <li className="mb-1"><Link href="/labnotes" className="text-gray-500 hover:text-purple-700">{t.footer.links.blog}</Link></li>
                   <li className="mb-1"><Link href="/#proyectos" className="text-gray-500 hover:text-purple-700">{t.footer.links.cases}</Link></li>
                   <li className="mb-1"><Link href="/#services" className="text-gray-500 hover:text-purple-700">{t.footer.links.tools}</Link></li>
                 </ul>

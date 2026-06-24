@@ -46,14 +46,12 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/company/sambalab/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/labnotes"
                   className="hover:text-black transition duration-150 ease-in-out"
                 >
                   {t.navbar.blog}
-                </a>
+                </Link>
               </li>
               <li>
                 <Link

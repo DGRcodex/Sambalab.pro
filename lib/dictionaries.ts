@@ -243,7 +243,7 @@ export const translations: Record<'es' | 'en', Dictionary> = {
                 webDev: "Desarrollo Web",
                 aiAuto: "Automatización con IA",
                 proto: "Prototipado creativo",
-                blog: "Blog",
+                blog: "Lab Notes",
                 cases: "Casos de estudio",
                 tools: "Herramientas"
             }
@@ -447,7 +447,7 @@ export const translations: Record<'es' | 'en', Dictionary> = {
                 webDev: "Web Development",
                 aiAuto: "AI Automation",
                 proto: "Creative Prototyping",
-                blog: "Blog",
+                blog: "Lab Notes",
                 cases: "Case Studies",
                 tools: "Tools"
             }
