@@ -34,58 +34,57 @@ export default function ShareButtons({ url, title }: { url: string; title: strin
   };
 
   return (
-    <div className="flex flex-col items-center py-10 border-t border-slate-800 mt-16">
-      <h3 className="text-xl font-bold text-white mb-6">Comparte este artículo</h3>
-      <div className="flex gap-4">
+    <div className="flex flex-col items-center py-10 border-t border-gray-200 mt-16">
+      <h3 className="text-lg font-bold text-gray-900 mb-6">Comparte este artículo</h3>
+      <div className="flex gap-3">
         <a
           href={`https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-[#25D366] text-white hover:scale-110 transition-transform shadow-lg shadow-[#25D366]/20"
+          className="w-11 h-11 flex items-center justify-center rounded-full bg-[#25D366] text-white hover:scale-110 transition-transform shadow-sm"
           aria-label="Compartir en WhatsApp"
         >
-          <FaWhatsapp size={24} />
+          <FaWhatsapp size={20} />
         </a>
 
         <a
           href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-[#0077b5] text-white hover:scale-110 transition-transform shadow-lg shadow-[#0077b5]/20"
+          className="w-11 h-11 flex items-center justify-center rounded-full bg-[#0077b5] text-white hover:scale-110 transition-transform shadow-sm"
           aria-label="Compartir en LinkedIn"
         >
-          <FaLinkedinIn size={22} />
+          <FaLinkedinIn size={18} />
         </a>
 
-        {/* Discord e Instagram no tienen un "share link" web directo útil para URLs, así que usamos el portapapeles/share API nativo */}
         <button
           onClick={handleCopyLink}
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white hover:scale-110 transition-transform shadow-lg shadow-[#bc1888]/20"
+          className="w-11 h-11 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white hover:scale-110 transition-transform shadow-sm"
           aria-label="Compartir en Instagram"
         >
-          <FaInstagram size={24} />
+          <FaInstagram size={20} />
         </button>
 
         <button
           onClick={handleCopyLink}
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5865F2] text-white hover:scale-110 transition-transform shadow-lg shadow-[#5865F2]/20"
+          className="w-11 h-11 flex items-center justify-center rounded-full bg-[#5865F2] text-white hover:scale-110 transition-transform shadow-sm"
           aria-label="Compartir en Discord"
         >
-          <FaDiscord size={24} />
+          <FaDiscord size={20} />
         </button>
 
         <button
           onClick={handleCopyLink}
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-700 text-white hover:scale-110 transition-transform shadow-lg shadow-slate-700/50"
+          className="w-11 h-11 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-orange-100 hover:text-orange-600 hover:scale-110 transition-all shadow-sm"
           aria-label="Copiar enlace"
         >
-          <FaLink size={20} />
+          <FaLink size={16} />
         </button>
       </div>
       
       {copied && (
-        <p className="mt-4 text-sm text-teal-400 animate-pulse">
-          ¡Enlace copiado al portapapeles! Pégalo en tu red favorita.
+        <p className="mt-4 text-sm text-orange-600 animate-pulse font-medium">
+          ¡Enlace copiado al portapapeles!
         </p>
       )}
     </div>
