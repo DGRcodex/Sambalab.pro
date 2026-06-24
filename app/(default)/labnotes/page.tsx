@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { urlFor } from '../../../sanity/lib/image';
 import { FaExternalLinkAlt, FaTools, FaCodeBranch, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import ParticleNetwork from '@/components/ui/particle-network';
 
 async function getPosts() {
   const query = `*[_type == "post"] | order(publishedAt desc) {
@@ -55,21 +56,27 @@ export default async function BlogPage() {
     <div className="min-h-screen relative overflow-hidden font-sans selection:bg-orange-500 selection:text-white">
 
       {/* ═══════════ BACKGROUND TEXTURES ═══════════ */}
-      {/* Dot grid pattern */}
+      
+      {/* 1. Gradient base */}
+      <div className="fixed inset-0 pointer-events-none -z-10 bg-gradient-to-br from-gray-50 via-gray-100 to-purple-50/40" />
+      
+      {/* 2. Animated Particle Network (Orange & Blue) */}
+      <ParticleNetwork />
+
+      {/* 3. Micro dot grid (very subtle overlay) */}
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
-          backgroundImage: 'radial-gradient(circle, #d4d4d8 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
-          opacity: 0.4,
+          backgroundImage: 'radial-gradient(circle, #9ca3af 1px, transparent 1px)',
+          backgroundSize: '16px 16px',
+          opacity: 0.1,
         }}
       />
-      {/* Gradient base */}
-      <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-br from-white via-gray-50 to-purple-50/30" />
-      {/* Animated blobs */}
-      <div className="fixed top-20 -left-32 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl pointer-events-none z-0 animate-blob" />
-      <div className="fixed top-96 -right-32 w-[500px] h-[500px] bg-purple-200/15 rounded-full blur-3xl pointer-events-none z-0 animate-blob animation-delay-2000" />
-      <div className="fixed bottom-20 left-1/3 w-80 h-80 bg-orange-100/20 rounded-full blur-3xl pointer-events-none z-0 animate-blob animation-delay-4000" />
+      
+      {/* 4. Animated blobs for color bleeding */}
+      <div className="fixed top-20 -left-32 w-96 h-96 bg-orange-300/20 rounded-full blur-3xl pointer-events-none z-0 animate-blob" />
+      <div className="fixed top-96 -right-32 w-[500px] h-[500px] bg-blue-300/15 rounded-full blur-3xl pointer-events-none z-0 animate-blob animation-delay-2000" />
+      <div className="fixed bottom-20 left-1/3 w-80 h-80 bg-orange-200/20 rounded-full blur-3xl pointer-events-none z-0 animate-blob animation-delay-4000" />
 
       {/* ═══════════ CONTENT (relative z-10) ═══════════ */}
       <div className="relative z-10">
