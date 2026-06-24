@@ -1,4 +1,5 @@
 import { type SchemaTypeDefinition } from 'sanity';
+import { author } from './author';
 
 // Esquema para el bloque de Youtube
 export const youtube: SchemaTypeDefinition = {
@@ -46,6 +47,12 @@ export const post: SchemaTypeDefinition = {
       },
     },
     {
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: { type: 'author' },
+    },
+    {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
@@ -70,5 +77,5 @@ export const post: SchemaTypeDefinition = {
 };
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [post, youtube],
+  types: [post, youtube, author],
 };
