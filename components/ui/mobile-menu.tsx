@@ -44,7 +44,7 @@ export default function MobileMenu() {
       >
         <span className="sr-only">Menu</span>
         <svg
-          className="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out"
+          className="w-6 h-6 fill-current text-gray-700 hover:text-orange-500 transition duration-150 ease-in-out"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -61,28 +61,28 @@ export default function MobileMenu() {
         className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out"
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
-        <ul className="bg-gray-800 px-4 py-2">
+        <ul className="bg-white border-t border-b border-gray-100 shadow-sm px-4 py-4 space-y-2">
           <li>
-            <Link href="/#services" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+            <Link href="/#services" className="flex font-semibold w-full text-gray-600 hover:text-orange-500 py-2 justify-center transition-colors" onClick={() => setMobileNavOpen(false)}>
               {t.navbar.services}
             </Link>
           </li>
           <li>
-            <Link href="/#proyectos" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+            <Link href="/#proyectos" className="flex font-semibold w-full text-gray-600 hover:text-orange-500 py-2 justify-center transition-colors" onClick={() => setMobileNavOpen(false)}>
               {t.navbar.projects}
             </Link>
           </li>
           <li>
             <Link
               href="/labnotes"
-              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
+              className="flex font-semibold w-full text-gray-600 hover:text-orange-500 py-2 justify-center transition-colors"
               onClick={() => setMobileNavOpen(false)}
             >
               {t.navbar.blog}
             </Link>
           </li>
           <li>
-            <Link href="/#contacto" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+            <Link href="/#contacto" className="flex font-semibold w-full text-gray-600 hover:text-orange-500 py-2 justify-center transition-colors" onClick={() => setMobileNavOpen(false)}>
               {t.navbar.contact}
             </Link>
           </li>

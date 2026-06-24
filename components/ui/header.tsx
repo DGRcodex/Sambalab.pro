@@ -8,7 +8,7 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage();
 
   return (
-    <header className="fixed w-full z-30 bg-purple-100 transition duration-300 hover:bg-purple-200 group">
+    <header className="fixed w-full z-30 bg-white/90 backdrop-blur-md border-b border-gray-100 transition duration-300 group">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
 
@@ -28,11 +28,11 @@ export default function Header() {
 
           {/* Navegación escritorio */}
           <nav className="hidden md:flex md:grow">
-            <ul className="flex grow justify-end flex-wrap items-center gap-6 text-sm font-medium text-purple-900">
+            <ul className="flex grow justify-end flex-wrap items-center gap-6 text-sm font-semibold text-gray-700">
               <li>
                 <Link
                   href="/#services"
-                  className="hover:text-black transition duration-150 ease-in-out"
+                  className="hover:text-orange-500 transition duration-150 ease-in-out"
                 >
                   {t.navbar.services}
                 </Link>
@@ -40,7 +40,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/#proyectos"
-                  className="hover:text-black transition duration-150 ease-in-out"
+                  className="hover:text-orange-500 transition duration-150 ease-in-out"
                 >
                   {t.navbar.projects}
                 </Link>
@@ -48,7 +48,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/labnotes"
-                  className="hover:text-black transition duration-150 ease-in-out"
+                  className="hover:text-orange-500 transition duration-150 ease-in-out"
                 >
                   {t.navbar.blog}
                 </Link>
@@ -56,7 +56,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/#contacto"
-                  className="hover:text-black transition duration-150 ease-in-out"
+                  className="hover:text-orange-500 transition duration-150 ease-in-out"
                 >
                   {t.navbar.contact}
                 </Link>
@@ -69,7 +69,7 @@ export default function Header() {
             {/* Language Switcher (Visible on Mobile & Desktop) */}
             <button
               onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
-              className="font-bold text-sm uppercase text-purple-700 hover:text-black transition-colors px-3 py-1 border border-purple-200 rounded-full bg-white/50 hover:bg-white"
+              className="font-bold text-xs tracking-wider uppercase text-gray-500 hover:text-orange-600 transition-colors px-3 py-1 border border-gray-200 hover:border-orange-200 rounded-full bg-white"
               aria-label="Switch Language"
             >
               {language === 'es' ? 'EN' : 'ES'}

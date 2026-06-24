@@ -51,7 +51,7 @@ export default function Hero() {
         />
         {/* Modern Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
-        <div className="absolute inset-0 bg-purple-900/20 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-orange-900/20 mix-blend-overlay" />
 
         {/* Particles Effect */}
         <ParticlesBackground />
@@ -70,7 +70,7 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-purple-200 bg-300% animate-gradient"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 via-white to-orange-100 bg-300% animate-gradient"
             >
               {t.hero.title2}
             </motion.span>
@@ -95,7 +95,7 @@ export default function Hero() {
           >
             <div>
               <a
-                className="btn text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 w-full sm:w-auto rounded-full px-8 py-4 text-lg font-medium shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1"
+                className="btn text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-400 w-full sm:w-auto rounded-full px-8 py-4 text-lg font-medium shadow-lg hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1"
                 href="#services"
               >
                 {t.hero.ctaService}

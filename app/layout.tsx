@@ -11,6 +11,7 @@ import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
 import CustomCursor from '@/components/ui/custom-cursor'
 import ScrollProgress from '@/components/ui/scroll-progress'
+import SchemaMarkup from '@/components/seo/SchemaMarkup'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -32,8 +33,32 @@ const playfair = Playfair_Display({
 })
 
 export const metadata = {
-  title: 'Sambalab - Diseño, Desarrollo e Inteligencia',
-  description: 'Agencia de desarrollo de software, diseño web e inteligencia artificial.',
+  metadataBase: new URL('https://sambalab.pro'),
+  title: 'Sambalab - Laboratorio Técnico y Desarrollo de Software con IA',
+  description: 'Agencia de desarrollo de software, diseño web corporativo e integración de inteligencia artificial. Convertimos ideas complejas en infraestructura digital escalable.',
+  keywords: ['Desarrollo de Software', 'Inteligencia Artificial', 'Web Design', 'Next.js', 'Desarrollo MVP', 'Arquitectura Cloud', 'Agencia de Desarrollo'],
+  openGraph: {
+    title: 'Sambalab - Laboratorio Técnico y Desarrollo de Software con IA',
+    description: 'Creamos plataformas, experiencias y herramientas digitales que combinan creatividad, tecnología y visión estratégica.',
+    url: 'https://sambalab.pro',
+    siteName: 'Sambalab',
+    images: [
+      {
+        url: '/sambalablogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Sambalab Logo',
+      },
+    ],
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sambalab - Laboratorio Técnico y Desarrollo con IA',
+    description: 'Creamos infraestructura digital con propósito. Desarrollo Full Stack y AI.',
+    images: ['/sambalablogo.png'],
+  },
 }
 
 export default function RootLayout({
@@ -43,7 +68,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${architects_daughter.variable} ${playfair.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
+      <head>
+        <SchemaMarkup />
+      </head>
+      <body className={`${inter.variable} ${architects_daughter.variable} ${playfair.variable} font-inter antialiased bg-slate-50 text-gray-900 tracking-tight`}>
         <LanguageProvider>
           <CustomCursor />
           <ScrollProgress />
