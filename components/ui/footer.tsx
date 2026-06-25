@@ -20,7 +20,7 @@ export default function Footer() {
               <div className="mb-2">
                 <Link href="/" className="inline-block" aria-label="Sambalab">
                   <Image
-                    src="/sambalablogo.png"
+                    src="/sambalablogo-v2.png"
                     alt="Sambalab Logo"
                     width={240}
                     height={80}

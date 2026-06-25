@@ -41,7 +41,7 @@ export const metadata = {
     siteName: 'Sambalab',
     images: [
       {
-        url: '/sambalablogo.png',
+        url: '/sambalablogo-v2.png',
         width: 1200,
         height: 630,
         alt: 'Sambalab Logo',
@@ -54,7 +54,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Sambalab — Ingeniería de Producto y Co-creación Digital',
     description: 'Ingeniería de producto end-to-end. IA, Cloud, y código profesional que escala.',
-    images: ['/sambalablogo.png'],
+    images: ['/sambalablogo-v2.png'],
   },
 }
 

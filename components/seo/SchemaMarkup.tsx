@@ -4,7 +4,7 @@ export default function SchemaMarkup() {
     "@type": "Organization",
     "name": "Sambalab",
     "url": "https://sambalab.pro",
-    "logo": "https://sambalab.pro/sambalablogo.png",
+    "logo": "https://sambalab.pro/sambalablogo-v2.png",
     "description": "Laboratorio de ingeniería digital. Desarrollamos productos de software completos, desde MVPs hasta plataformas complejas, utilizando las herramientas más avanzadas del mercado.",
     "email": "contacto@sambalab.pro",
     "sameAs": [

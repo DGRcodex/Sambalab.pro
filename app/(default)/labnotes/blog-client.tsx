@@ -172,7 +172,7 @@ export default function BlogClient({ posts, settings }: { posts: any[], settings
                           />
                         ) : (
                           <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-50 flex items-center justify-center">
-                            <Image src="/sambalablogo.png" alt="Sambalab" width={100} height={30} className="opacity-20 grayscale" />
+                            <Image src="/sambalablogo-v2.png" alt="Sambalab" width={100} height={30} className="opacity-20 grayscale" />
                           </div>
                         )}
                         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
