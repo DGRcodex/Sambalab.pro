@@ -21,9 +21,30 @@
     }
 }
 
-/* Smooth scroll behavior */
+/* Smooth scroll behavior and responsive scaling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Pantallas medianas / MacBook 13" (de 1024px a 1359px) -> 20% más pequeño */
+@media (min-width: 1024px) and (max-width: 1359px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* Pantallas de 1360px a 1599px (como la de 27" a 1366px de resolución) -> 30% más pequeño */
+@media (min-width: 1360px) and (max-width: 1599px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/* Pantallas grandes reales (1600px en adelante) -> Se ve al 100% normal */
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
 }
 
 /* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
