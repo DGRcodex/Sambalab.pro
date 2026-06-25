@@ -17,20 +17,20 @@ export default function Zigzag() {
   return (
     <section className="bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-16 md:py-24 border-t border-gray-100">
+        <div className="py-12 md:py-16 border-t border-gray-100">
 
           {/* Encabezado */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h1 mb-6 text-gray-900 font-playfair text-5xl sm:text-6xl lg:text-7xl font-normal">
+          <div className="max-w-3xl mx-auto text-center pb-8 md:pb-12">
+            <h2 className="h1 mb-6 text-gray-900 font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
               {t.zigzag.title}
             </h2>
-            <p className="text-xl text-gray-600 font-light">
+            <p className="text-lg text-gray-600 font-light">
               {t.zigzag.subtitle}
             </p>
           </div>
 
           {/* Ítems */}
-          <div className="grid gap-20">
+          <div className="grid gap-12">
 
             {/* 1 */}
             <div className="md:grid md:grid-cols-12 md:gap-12 items-center">
@@ -41,8 +41,8 @@ export default function Zigzag() {
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-3xl">{t.zigzag.item1Title}</h3>
-                  <p className="text-xl text-gray-600 mb-4 leading-relaxed">
+                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-2xl">{t.zigzag.item1Title}</h3>
+                  <p className="text-base text-gray-600 mb-4 leading-relaxed">
                     {t.zigzag.item1Desc}
                   </p>
                 </div>
@@ -58,8 +58,8 @@ export default function Zigzag() {
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-3xl">{t.zigzag.item2Title}</h3>
-                  <p className="text-xl text-gray-600 mb-4 leading-relaxed">
+                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-2xl">{t.zigzag.item2Title}</h3>
+                  <p className="text-base text-gray-600 mb-4 leading-relaxed">
                     {t.zigzag.item2Desc}
                   </p>
                 </div>
@@ -75,8 +75,8 @@ export default function Zigzag() {
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-3xl">{t.zigzag.item3Title}</h3>
-                  <p className="text-xl text-gray-600 mb-4 leading-relaxed">
+                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-2xl">{t.zigzag.item3Title}</h3>
+                  <p className="text-base text-gray-600 mb-4 leading-relaxed">
                     {t.zigzag.item3Desc}
                   </p>
                 </div>
@@ -92,8 +92,8 @@ export default function Zigzag() {
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-3xl">{t.zigzag.item4Title}</h3>
-                  <p className="text-xl text-gray-600 mb-4 leading-relaxed">
+                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-2xl">{t.zigzag.item4Title}</h3>
+                  <p className="text-base text-gray-600 mb-4 leading-relaxed">
                     {t.zigzag.item4Desc}
                   </p>
                 </div>
@@ -109,8 +109,8 @@ export default function Zigzag() {
               </div>
               <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-3xl">{t.zigzag.item5Title}</h3>
-                  <p className="text-xl text-gray-600 mb-4 leading-relaxed">
+                  <h3 className="h3 mb-4 text-gray-900 font-playfair font-bold text-2xl">{t.zigzag.item5Title}</h3>
+                  <p className="text-base text-gray-600 mb-4 leading-relaxed">
                     {t.zigzag.item5Desc}
                   </p>
                 </div>

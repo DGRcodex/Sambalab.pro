@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="py-12 md:py-16">
+      <div className="py-8 md:py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Top area */}
@@ -24,7 +24,7 @@ export default function Footer() {
                     alt="Sambalab Logo"
                     width={240}
                     height={80}
-                    className="w-auto h-20"
+                    className="w-auto h-12"
                   />
                 </Link>
               </div>

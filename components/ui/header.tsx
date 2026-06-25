@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="fixed w-full z-30 bg-white/90 backdrop-blur-md border-b border-gray-100 transition duration-300 group">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
 
           {/* Logo y branding */}
           <div className="shrink-0 mr-4">

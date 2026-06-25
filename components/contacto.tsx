@@ -129,10 +129,10 @@ export default function Contacto() {
             className="max-w-3xl mx-auto text-center pb-8 md:pb-10"
             data-aos="fade-up"
           >
-            <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
+            <h2 className="h1 mb-4 text-black font-playfair text-2xl sm:text-3xl lg:text-4xl font-normal">
               {t.contact.title}
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base text-gray-600">
               {t.contact.subtitle}
             </p>
           </div>
@@ -143,7 +143,7 @@ export default function Contacto() {
               <div className="space-y-6" data-aos="fade-right">
                 {/* Info Cards */}
                 <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-6">
                     {t.contact.whyChooseUs}
                   </h3>
                   <ul className="space-y-4 text-gray-600">
@@ -207,7 +207,7 @@ export default function Contacto() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.name ? "border-red-400" : "border-gray-200"
+                      className={`w-full px-4 py-2.5 rounded-lg bg-gray-50 border ${errors.name ? "border-red-400" : "border-gray-200"
                         } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="Juan Pérez"
                     />
@@ -230,7 +230,7 @@ export default function Contacto() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.company ? "border-red-400" : "border-gray-200"
+                      className={`w-full px-4 py-2.5 rounded-lg bg-gray-50 border ${errors.company ? "border-red-400" : "border-gray-200"
                         } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="Tu Empresa S.A."
                     />
@@ -255,7 +255,7 @@ export default function Contacto() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.email ? "border-red-400" : "border-gray-200"
+                      className={`w-full px-4 py-2.5 rounded-lg bg-gray-50 border ${errors.email ? "border-red-400" : "border-gray-200"
                         } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="contacto@empresa.com"
                     />
@@ -278,7 +278,7 @@ export default function Contacto() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.phone ? "border-red-400" : "border-gray-200"
+                      className={`w-full px-4 py-2.5 rounded-lg bg-gray-50 border ${errors.phone ? "border-red-400" : "border-gray-200"
                         } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                       placeholder="+56 9 1234 5678"
                     />
@@ -300,7 +300,7 @@ export default function Contacto() {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.service ? "border-red-400" : "border-gray-200"
+                      className={`w-full px-4 py-2.5 rounded-lg bg-gray-50 border ${errors.service ? "border-red-400" : "border-gray-200"
                         } text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all`}
                     >
                       <option value="" className="bg-white">
@@ -345,8 +345,8 @@ export default function Contacto() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      rows={4}
-                      className={`w-full px-4 py-3 rounded-lg bg-gray-50 border ${errors.message ? "border-red-400" : "border-gray-200"
+                      rows={3}
+                      className={`w-full px-4 py-2.5 rounded-lg bg-gray-50 border ${errors.message ? "border-red-400" : "border-gray-200"
                         } text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none`}
                       placeholder={t.contact.formMessagePlaceholder}
                     />

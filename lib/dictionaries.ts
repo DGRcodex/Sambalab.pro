@@ -5,6 +5,20 @@ export type Dictionary = {
         blog: string;
         contact: string;
     };
+    blog: {
+        title: string;
+        subtitle: string;
+        latestNotes: string;
+        readMore: string;
+        radarTitle: string;
+        radarSubtitle: string;
+        source: string;
+        all: string;
+        footerTitle: string;
+        footerDesc: string;
+        social: string;
+        empty: string;
+    };
     hero: {
         title1: string;
         title2: string;
@@ -159,6 +173,20 @@ export const translations: Record<'es' | 'en', Dictionary> = {
             projects: "Proyectos",
             blog: "Lab Notes",
             contact: "Contacto",
+        },
+        blog: {
+            title: "Lab Notes",
+            subtitle: "El cuaderno de laboratorio de Sambalab. Artículos técnicos, reflexiones de ingeniería y el detrás de escena de nuestro código.",
+            latestNotes: "Últimas Notas",
+            readMore: "Leer Artículo →",
+            radarTitle: "Tech Radar",
+            radarSubtitle: "Señales del ecosistema",
+            source: "Fuente",
+            all: "Todos",
+            footerTitle: "¿Qué es Lab Notes?",
+            footerDesc: "Un espacio donde los ingenieros y fundadores de Sambalab documentan su proceso, comparten decisiones de arquitectura y exploran nuevas tecnologías.",
+            social: "Ecosistema Sambalab",
+            empty: "Pronto publicaremos nuestras primeras notas de laboratorio."
         },
         hero: {
             title1: "Ingeniería de producto,",
@@ -363,6 +391,20 @@ export const translations: Record<'es' | 'en', Dictionary> = {
             projects: "Projects",
             blog: "Lab Notes",
             contact: "Contact",
+        },
+        blog: {
+            title: "Lab Notes",
+            subtitle: "Sambalab's laboratory notebook. Technical articles, engineering reflections, and behind the scenes of our code.",
+            latestNotes: "Latest Notes",
+            readMore: "Read Article →",
+            radarTitle: "Tech Radar",
+            radarSubtitle: "Ecosystem signals",
+            source: "Source",
+            all: "All",
+            footerTitle: "What is Lab Notes?",
+            footerDesc: "A space where Sambalab engineers and founders document their process, share architecture decisions, and explore new technologies.",
+            social: "Sambalab Ecosystem",
+            empty: "We will publish our first lab notes soon."
         },
         hero: {
             title1: "Product engineering,",

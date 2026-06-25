@@ -1,5 +1,6 @@
 import { type SchemaTypeDefinition } from 'sanity';
 import { author } from './author';
+import { labnotesSettings } from './labnotesSettings';
 
 // Esquema para el bloque de Youtube
 export const youtube: SchemaTypeDefinition = {
@@ -77,5 +78,5 @@ export const post: SchemaTypeDefinition = {
 };
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [post, youtube, author],
+  types: [post, youtube, author, labnotesSettings],
 };

@@ -59,8 +59,8 @@ export default function Hero() {
 
       {/* Hero content */}
       <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6 pointer-events-none">
-        <div className="max-w-4xl mx-auto flex flex-col items-center justify-center z-10 pointer-events-auto">
-          <h1 className="h1 mb-6 text-white font-playfair text-4xl sm:text-5xl lg:text-7xl font-normal tracking-tight drop-shadow-lg">
+        <div className="max-w-3xl mx-auto flex flex-col items-center justify-center z-10 pointer-events-auto">
+          <h1 className="h1 mb-6 text-white font-playfair text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-normal tracking-tight drop-shadow-lg">
             <motion.span custom={0} initial="hidden" animate="visible" variants={textVariants} className="block">
               {t.hero.title1}
             </motion.span>
@@ -81,7 +81,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            className="text-lg md:text-xl text-gray-100 mb-10 font-light max-w-2xl leading-relaxed drop-shadow-md"
+            className="text-base md:text-lg text-gray-100 mb-10 font-light max-w-2xl leading-relaxed drop-shadow-md"
           >
             {t.hero.subtitle}
           </motion.p>
@@ -95,7 +95,7 @@ export default function Hero() {
           >
             <div>
               <a
-                className="btn text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-400 w-full sm:w-auto rounded-full px-8 py-4 text-lg font-medium shadow-lg hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1"
+                className="btn text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-400 w-full sm:w-auto rounded-full px-6 py-3 text-base font-medium shadow-lg hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1"
                 href="#services"
               >
                 {t.hero.ctaService}
@@ -103,7 +103,7 @@ export default function Hero() {
             </div>
             <div>
               <a
-                className="btn text-white bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 w-full sm:w-auto rounded-full px-8 py-4 text-lg font-medium shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                className="btn text-white bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 w-full sm:w-auto rounded-full px-6 py-3 text-base font-medium shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 href="#contacto"
               >
                 {t.hero.ctaContact}

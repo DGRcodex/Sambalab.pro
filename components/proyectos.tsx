@@ -43,10 +43,10 @@ export default function Proyectos() {
     return (
         <section className="bg-gradient-to-b from-gray-50 to-white" id="proyectos">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <div className="py-12 md:py-20 border-t border-gray-200">
+                <div className="py-10 md:py-14 border-t border-gray-200">
                     {/* Header */}
-                    <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" data-aos="fade-up">
-                        <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
+                    <div className="max-w-3xl mx-auto text-center pb-8 md:pb-12" data-aos="fade-up">
+                        <h2 className="h1 mb-4 text-black font-playfair text-2xl sm:text-3xl lg:text-4xl font-normal">
                             {t.projects.title}
                         </h2>
                         <p className="text-lg text-gray-600">
@@ -64,7 +64,7 @@ export default function Proyectos() {
                                 data-aos-delay={idx * 100}
                             >
                                 {/* Image */}
-                                <div className="relative h-56 overflow-hidden bg-gray-100">
+                                <div className="relative h-48 overflow-hidden bg-gray-100">
                                     <Image
                                         src={project.image}
                                         alt={project.title}
@@ -80,7 +80,7 @@ export default function Proyectos() {
 
                                 {/* Content */}
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+                                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
                                         {project.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -113,7 +113,7 @@ export default function Proyectos() {
                         </p>
                         <a
                             href="#contacto"
-                            className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                            className="inline-flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                         >
                             {t.projects.ctaButton}
                         </a>

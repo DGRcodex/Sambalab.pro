@@ -49,10 +49,10 @@ export default function Equipo() {
   return (
     <section className="bg-purple-100" id="equipo">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+        <div className="py-10 md:py-14 border-t border-gray-800">
           {/* Encabezado */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h1 mb-4 text-black font-playfair text-3xl sm:text-4xl lg:text-5xl font-normal">
+          <div className="max-w-3xl mx-auto text-center pb-8 md:pb-12">
+            <h2 className="h1 mb-4 text-black font-playfair text-2xl sm:text-3xl lg:text-4xl font-normal">
               {t.team.title}
             </h2>
             <p className="text-lg text-gray-700">
